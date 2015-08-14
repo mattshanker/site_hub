@@ -1,0 +1,4 @@
+DirectoryIndex index.html index.php parking-page.html
+
+RewriteEngine On
+RewriteRule \.git - [F,L]
