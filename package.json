@@ -1,5 +1,8 @@
 {
   "name": "simple-brunch",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "browser-sync-brunch": "0.0.9"
+  }
 }
