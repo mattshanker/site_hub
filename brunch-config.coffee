@@ -16,8 +16,3 @@ exports.config =
                       logFileChanges: true,
                       injectChanges: true
                       scrollProportionally: true
-          postcss:
-                  processors: [
-                      require('autoprefixer')(['last 3 versions']),
-                      require('csswring')
-                  ]

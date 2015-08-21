@@ -1,9 +1,6 @@
-{
   "name": "simple-brunch",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "browser-sync-brunch": "^0.0.9",
-    "postcss-brunch": "^0.4.2",
   }
-}
