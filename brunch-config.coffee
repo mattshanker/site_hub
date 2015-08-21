@@ -4,7 +4,7 @@ exports.config =
     # javascripts:
     #   joinTo: 'app.js'
     stylesheets:
-      joinTo: 'styles.css'
+      joinTo: 'css/main.css'
   paths:
     public:'.'
     watch: ['.']
@@ -18,6 +18,6 @@ exports.config =
                       scrollProportionally: true
           postcss:
                   processors: [
-                      require('autoprefixer')(['last 8 versions']),
+                      require('autoprefixer')(['last 3 versions']),
                       require('csswring')
                   ]
