@@ -7,7 +7,7 @@ exports.config =
       joinTo: 'css/main.css'
   paths:
     public:'.'
-    watch: ['.']
+    watch: ['*.*']
   plugins:
           browserSync:
                       port: 3334,
