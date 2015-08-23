@@ -33,43 +33,41 @@
   </ul>
 </div>
 
-<div class="contact">
+
 
   <div class="contacttitle shadow">
     <h2>Contact me</h2>
   </div>
 
-<div class="namediv">
-    <label class="" for="name">
-      What should I call you? <i class="fa fa-fw fa-asterisk"></i>
-    </label>
-    <input aria-required placeholder="Your name" value="" class="" type="text" id="name" />
-</div>
+<form class="" action="contact.php" method="post">
 
-  <div>
-    <label class="" for="email">
-      Where can I send you email? <i class="fa fa-fw fa-asterisk text-danger"></i>
+    <label class="" for="name">
+      What should I call you?
     </label>
-    <input aria-required placeholder="Your email" class="" type="text" id="email" />
-  </div>
-   <div>
-    <label class="" for="website">
+    <input name="name" placeholder="Your name" value="" class="" type="text" id="name" /><br />
+
+    <label class="" for="email">
+      Where can I send you email?
+    </label>
+    <input name="email" placeholder="Your email" class="" type="email" id="email" /><br />
+
+    <label class="" for="url">
       Do you have a website already?
     </label>
-
-    <input placeholder="URL" class="" type="url" id="website" />
-   </div>
+    <input placeholder="URL" name="url" type="url" id="website" /><br />
 
    <label class="" for="message">
-     Your message (1000 characters or less, please)
+     Your message (1000 characters max)
    </label>
     <textarea name="message" autocomplete="off" maxlength="1000" placeholder=""></textarea>
 
-  </div>
-      <div class="formbuttons">
+  <label for="human">Help keep out the spam! What's 3 plus 4?</label>
+  <input name="human" type="number" placeholder="=?">
+
         <button id="reset" type="reset">Reset</button>
-        <button id="submit" type="submit">SEND MESSAGE</button>
-      </div>
+        <button id="submit" type="submit">SEND</button>
+
+</form>
 
 
    <span class="contactspan">
