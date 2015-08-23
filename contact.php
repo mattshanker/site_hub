@@ -3,7 +3,7 @@
     $email = $_POST['email'];
     $url = $_POST['url'];
     $message = $_POST['message'];
-    $from = 'From: website';
+    $from = 'contact@mattshanker.com';
     $to = 'matt@mattshanker.com';
     $subject = 'Hi from the contact form!';
     $human = $_POST['human'];
