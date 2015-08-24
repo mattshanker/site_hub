@@ -284,7 +284,7 @@ video{
 
 	}
 	.subtitle h1 {
-		width: 600px;
+		width: auto;
 		margin-top: 40px;
 	}
 	.rwd > p{
