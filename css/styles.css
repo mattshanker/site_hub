@@ -58,9 +58,9 @@ table {
 /*Reset, body styles
 --------------------------------------- */
 html {
-
+		width: 100%;
   	font-family: 'Lato', sans-serif;
-
+		height: 100%;
 	}
 
 .wrap{
@@ -227,9 +227,6 @@ h4{
 	z-index: 3000;
 
 }
-/*.gifbg{
-	display: none;
-}*/
 	.buttondiv{
 		text-align: center;
 		width: 100%;
@@ -397,25 +394,24 @@ h4{
 		display: none;
 	}
 	video{
-		display:none;
+		display: none;
 	}
 	.gifbg{
 		width: 100%;
-		height: 100%;
-		margin: 0 auto;
-		position: relative;
-		z-index: 8000;
+		height: 500px;
+		position: absolute;
+		z-index: 80;
 		background-color: green;
 		background: url("../paint.gif") top no-repeat;
+		background-size: cover;
 	}
-	.titlebg{
+	.headertitle{
+		background-color: #eee;
 		position: relative;
-		top:0;
-		z-index: 10;
-		width: 100%;
+		z-index: 5000;
 		height: auto;
-		background-color: #aaa;
-		background: url("../paint copy1.gif") top no-repeat;
+		width: 100%;
+		margin-top: 100%;
 	}
 
 	.nopanel{
