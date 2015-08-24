@@ -34,7 +34,6 @@ body {
 	margin: 0 auto;
 	line-height: 1.5;
 	position: relative;
-	/*background-color: #eee;*/
 	height:100%;
 	overflow-x:hidden;
 	font-size: 100%;
@@ -59,16 +58,15 @@ table {
 /*Reset, body styles
 --------------------------------------- */
 html {
-		width: 100%;
+
   	font-family: 'Lato', sans-serif;
-		height: 100%;
+
 	}
 
 .wrap{
 		position: relative;
 		height:100%;
-
-		z-index: 1000;
+		z-index: 10;
 		width:100%;
 }
 .navbar{
@@ -82,7 +80,7 @@ html {
 	left: 0;
 	right: 0;
 	text-align: center;
-	background-color: #333;
+	background-color: #ddd;
 	z-index: 9999;
 }
 
@@ -199,35 +197,25 @@ h4{
 	}
 }
 
-video{
+
+.videodiv{
 	position: fixed;
 	height: 100%;
 	width: 100%;
 	top: 0;
-}
-
-.titlebg{
-	position: relative;
-	top:0;
 	z-index: 10;
-	height: 50vh;
-	width: 100%;
-	background-color: #aaa;
-	background: url("../paint copy1.gif") top no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
 }
 
-	.headerbg{
+	.headertitle{
+		background-color: #eee;
 		position: relative;
-		z-index: 1000;
-		height:auto;
-		width:100%;
-		background-color: none;
-		text-align: center;
-		animation: titlefade 2s;
+		z-index: 5000;
+		height: auto;
+		width: 100%;
+		margin-top: 80vh;
 	}
-.headerbg p{
+
+.subtitle p{
 	text-align: center;
 	max-width: 800px;
 	margin-left: auto;
@@ -235,18 +223,21 @@ video{
 	border: 2px solid black;
 	padding: 10px;
 	height: auto;
-}
-	.headertitle{
-		margin-top: 50px;
-		background-color: transparent;
-	}
+	position: relative;
+	z-index: 3000;
 
+}
+.gifbg{
+	display: none;
+}
 	.buttondiv{
 		text-align: center;
 		width: 100%;
 		padding:100px 0;
 		margin: 0;
 		height: auto;
+		position: relative;
+		z-index: 2000;
 	}
 .buttondiv button{
 	margin-top: 20px;
@@ -398,10 +389,35 @@ video{
 	.aboutfooter{
 		display:block;
 	}
-	.headerbg p{
+	.subtitle p{
 
 		margin: 0 20px;
 	}
+	.videodiv{
+		display: none;
+	}
+	video{
+		display:none;
+	}
+	.gifbg{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		z-index: 8000;
+		background-color: green;
+		background: url("../paint copy.gif") top no-repeat;
+	}
+	.titlebg{
+		position: relative;
+		top:0;
+		z-index: 10;
+		width: 100%;
+		height: auto;
+		background-color: #aaa;
+		background: url("../paint copy1.gif") top no-repeat;
+	}
+
 	.nopanel{
 		z-index: 5000;
 		position: relative;
