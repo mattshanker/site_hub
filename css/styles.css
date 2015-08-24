@@ -34,7 +34,7 @@ body {
 	margin: 0 auto;
 	line-height: 1.5;
 	position: relative;
-	background-color: #eee;
+	/*background-color: #eee;*/
 	height:100%;
 	overflow-x:hidden;
 	font-size: 100%;
@@ -67,7 +67,7 @@ html {
 .wrap{
 		position: relative;
 		height:100%;
-		background-color: #ccc;
+
 		z-index: 1000;
 		width:100%;
 }
@@ -213,7 +213,7 @@ video{
 	height: 50vh;
 	width: 100%;
 	background-color: #aaa;
-	background: url("../poster.jpg") top no-repeat;
+	background: url("../paint copy1.gif") top no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
@@ -223,7 +223,7 @@ video{
 		z-index: 1000;
 		height:auto;
 		width:100%;
-		background-color: gainsboro;
+		background-color: none;
 		text-align: center;
 		animation: titlefade 2s;
 	}
@@ -238,7 +238,7 @@ video{
 }
 	.headertitle{
 		margin-top: 50px;
-		background-color: inherit;
+		background-color: transparent;
 	}
 
 	.buttondiv{
@@ -399,7 +399,7 @@ video{
 		display:block;
 	}
 	.headerbg p{
-		
+
 		margin: 0 20px;
 	}
 	.nopanel{
