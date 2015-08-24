@@ -227,9 +227,9 @@ h4{
 	z-index: 3000;
 
 }
-.gifbg{
+/*.gifbg{
 	display: none;
-}
+}*/
 	.buttondiv{
 		text-align: center;
 		width: 100%;
@@ -406,7 +406,7 @@ h4{
 		position: relative;
 		z-index: 8000;
 		background-color: green;
-		background: url("../paint copy.gif") top no-repeat;
+		background: url("../paint.gif") top no-repeat;
 	}
 	.titlebg{
 		position: relative;
