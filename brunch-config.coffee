@@ -3,8 +3,8 @@ exports.config =
   files:
     # javascripts:
     #   joinTo: 'app.js'
-    # stylesheets:
-    #   joinTo: 'css/main.css'
+    stylesheets:
+      joinTo: 'css/styles.css'
   paths:
     public:'.'
     watch: ['*.html, css/styles.css']
