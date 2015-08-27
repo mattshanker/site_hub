@@ -1,3 +1,4 @@
+{
   "name": "ms",
   "description": "Description",
   "author": "Matt",
@@ -11,8 +12,9 @@
   },
   "dependencies": {
     "javascript-brunch": ">= 1.0 < 1.9",
-    "css-brunch": ">= 1.0 < 1.9",
+    "css-brunch": ">= 1.0 < 1.9"
   },
   "devDependencies": {
     "browser-sync-brunch": "<= 1.0"
   }
+}
