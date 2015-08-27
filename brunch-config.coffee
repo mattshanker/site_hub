@@ -14,5 +14,5 @@ exports.config =
                       logLevel: 'debug',
                       logConnections: true,
                       logFileChanges: true,
-                      injectChanges: true
+                      injectChanges: true,
                       scrollProportionally: true
