@@ -15,6 +15,6 @@
     "css-brunch": ">= 1.0 < 1.9",
     "uglify-js-brunch": ">= 1.0 < 1.9",
     "clean-css-brunch": ">= 1.0 < 1.9",
-    "auto-reload-brunch": ">= 1.0 < 1.9"
+    "browser-sync-brunch": "< 1.0"
   }
 }

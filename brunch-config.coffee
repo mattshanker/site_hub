@@ -3,11 +3,11 @@ exports.config =
   files:
     # javascripts:
     #   joinTo: 'app.js'
-    stylesheets:
-      joinTo: 'css/main.css'
+    # stylesheets:
+    #   joinTo: 'css/main.css'
   paths:
     public:'.'
-    watch: ['*.*']
+    watch: ['*.html, css/styles.css']
   plugins:
           browserSync:
                       port: 3334,
