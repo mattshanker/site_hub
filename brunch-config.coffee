@@ -7,12 +7,14 @@ exports.config =
       joinTo: 'css/styles.css'
   paths:
     public:'.'
-    watch: ['*.html, css/styles.css']
+    watch: ['*.html', 'css/styles.css']
   plugins:
           browserSync:
+                      open: "local",
+                      startPath: "index.html",
                       port: 3334,
                       logLevel: 'debug',
                       logConnections: true,
                       logFileChanges: true,
-                      injectChanges: true,
+                      injectChanges: false,
                       scrollProportionally: true
