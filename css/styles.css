@@ -405,8 +405,15 @@ h4{
 	}
 	.aboutfooter{
 		height: 500px;
-		background-color: lightslategray;
+		width: 100%;
+		background-color: steelblue;
 		margin-bottom: 100px;
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+ 		display: -ms-flexbox;  /* TWEENER - IE 10 */
+		display: -webkit-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 @media only screen and (min-width: 768px){
