@@ -1,14 +1,19 @@
 var gulp        = require('gulp');
-var s = require('browser-sync').create();
+var sync        = require('browser-sync').create();
 
 // Static server
 gulp.task('serve', function() {
-    browserSync.init({
+    sync.init({
         server: {
             baseDir: "./"
-            browser:["google chrome", "firefox"]
-        }
+        //browser: {
+        // "google chrome, firefox, Safari"
+      //}
+      }
     });
-    gulp.watch("./css/*.css").on('change', browserSync.reload);
-    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch(["./*.html", "./css/*.css"]).on('change', sync.reload);
+});
+
+gulp.task('greet', function () {
+   console.log('Hello world!');
 });
