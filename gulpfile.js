@@ -8,7 +8,7 @@ gulp.task('build', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./css/stylesmin.css'));
+        .pipe(gulp.dest('./css/'));
 });
 // Static server
 gulp.task('serve', function() {
