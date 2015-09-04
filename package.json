@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "browser-sync": "^2.8.2",
-    "browser-sync-brunch": "<= 1.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1"
   }

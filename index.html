@@ -7,39 +7,48 @@
 
     <title>_mattshanker.com</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+
+
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   </head>
 
   <body>
-    <div class="wrap">
-
-    <div id="underconstruction">
-      <i class="fa fa-exclamation-triangle"></i>This website is still under construction but if you stumble across it please send all questions, comments, suggestions, or hate mail to <a href="mailto:willitlaunch@mattshanker.com">willitlaunch@mattshanker.com</a><i class="fa fa-exclamation-triangle"></i>
-    </div>
+    <div class="wrap" id='homepage'>
 
     <div class="navbar" id="navigation">
       <ul>
-        <li><a id="nHome" href="index.html">Home</a></li>
-        <li><a id="nAbout" href="about.html">About Me</a></li>
-        <li><a id="nWork" href="work.html">Work</a></li>
+        <li><a id="nHome" href="#homepage">Home</a></li>
+        <li><a href="#aboutsection">About Me</a></li>
+        <li><a id="nWork" href="#worksection">Work</a></li>
         <li><a id="nContact" href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <!-- <div class="videodiv">
-      <video poster="poster.jpg" autoplay loop>
-        <source src="paint.webm" type="video/webm">
-        <source src="paint copy.mp4" type="video/mp4">
-      </video>
-    </div> -->
 
-    <!-- <div class="gifbg">
-    </div> -->
 
-    <div class="subtitle">
+
     <div class="headertitle">
        <h1 class="shadow">
           Matt Shanker
@@ -53,8 +62,134 @@
       </div>
 
     </div>
+
+
+<!-- about me html -->
+
+
+    <div class="title">
+      <h1>About Me</h1>
+
+    </div>
+    <div class="content wow bounceIn">
+      <h4>Web development makes the same website look great on</h4>
+      <div class="iconspan">
+        <span>
+          <i class='fa fa-3x fa-laptop'></i>
+          <i class='fa fa-4x fa-tablet'></i>
+          <i class='fa fa-5x fa-mobile'></i>
+        </span>
+      </div>
     </div>
 
+
+    <!-- <p>
+      <a href="webdev.html">Web Development</a><br>
+        Development is the implementation of design through code. Creating a website that can excel on small and large screens is a requirement for modern business and can be achieved through HTML5, CSS3, JavaScript, JQuery and other front-end frameworks designed for mobile.
+    </p> -->
+    <div class="content wow fadeInUp">
+
+      <i class='fa fa-5x fa-map-signs'></i>
+      <h3>Inbound Marketing</h3><br>
+
+      <span class="fa-stack fa-3x">
+      <i class='fa fa-stack-2x fa-ban'></i>
+      <i class='fa fa-stack-1x fa-bullhorn'></i>
+      </span>
+
+    </div>
+
+
+
+
+      <div class="aboutfooter" id="aboutsection">
+        <p>
+          Maintenance:<br>
+          Site not up to code? I'll take over where someone else left off and help you get back online. <a href="contact.html">Contact me</a><i class="fa fa-3x fa-wrench"></i>
+        </p>
+      </div>
+  <!-- end about me -->
+
+
+
+<!-- webdev content -->
+  <div class="rwdpanel">
+    <h2>Web Development</h2>
+      <i class="fa fa-code fa-5x"></i>
+  </div>
+
+<div class="content">
+
+    <h2>Responsive Web Design</h2>
+    <p>
+      Technique of using media queries, adaptive content and grid layout to allow your site to respond to fit any screen.
+    </p>
+    <p>
+      Things like adding a schedule, color picker, menu, a date picker help make your site more useful to first-time, repeat, and potential customers.
+    </p>
+  <p>
+       As of April 2015, Google's search algorithm has already started penalizing websites that aren't optimized for mobile in results, so it's more important than ever to design with mobile in mind. <a target="_blank" href="http://techcrunch.com/2015/02/26/google-makes-mobile-friendliness-a-ranking-signal-worldwide-boosts-indexed-apps-in-search-results/">[TechCrunch]</a>
+  </p>
+</div>
+
+
+<!-- end webdev content -->
+
+
+
+<!-- start inbound content -->
+
+    <div class="bg">
+      <h1 class="shadow">Inbound Marketing</h1>
+
+    </div>
+  <div class="content">
+        <p>
+          Inbound marketing is about doing the work for your customer ahead of time to reduce the friction they experience during the buying process.
+        </p>
+
+              <h2>What does that mean for you?</h2>
+
+                <span><br>
+                  <i class='fa fa-3x fa-search'></i>
+                  <i class='fa fa-2x fa-plus'></i>
+                  <i class='fa fa-3x fa-road'></i>
+                </span>
+
+              <h3>More time doing what you got into business for</h3>
+  </div>
+<div class="content">
+
+
+              <h4>automation</h4>
+
+                <p>
+                  Marketing automation gives your customers an alternative to a phone call to get more information about your business. It means guiding quick buyers, browsers, and return customers through your site to deliver personal, timely information.
+                </p>
+<!-- </div> -->
+<!-- <div class="content"> -->
+
+
+              <h4>onboarding</h4>
+                <p>
+                  Creating an on-boarding process for your business <span class="bold">can give you back your time</span> to focus on delivering the best product or service for your customers, in addition to giving your customers a better experience. Instead of starting from the beginning with each new client, you can spend your time with qualified customers who've already requested additional information about your business.
+                </p>
+
+            </div>
+
+<!-- end inbound content -->
+
+<!-- start work section -->
+<div class="workbg" id='worksection'>
+  <h1 class="worktitle">Work samples</h1>
+</div>
+<div class="content">
+
+</div>
+<!-- end work section -->
+
+
+<!-- end page wrap -->
 </div>
 
     <!-- browsync snippet -->
