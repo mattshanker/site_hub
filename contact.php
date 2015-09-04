@@ -5,7 +5,7 @@
     $message = $_POST['message'];
     $from = 'contact@mattshanker.com';
     $to = 'matt@mattshanker.com';
-    $subject = 'Hi from the contact form!';
+    $subject = 'Do some work!';
     $human = $_POST['human'];
 
     $body = "From: $name\n Email: $email\n Message:\n $message\n URL:$url"
