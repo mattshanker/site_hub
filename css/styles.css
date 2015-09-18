@@ -329,7 +329,7 @@ line-height: 63px;
 	width: 320px;
 	float: left;
 	margin: 40px 20px;
-
+	color: #3F403F;
 }
 
 
@@ -386,9 +386,9 @@ line-height: 63px;
 .services-section{
 	height: auto;
 	width: 100%;
-	color: #3F403F;
-	background-color: #CED0CE;
-	/*background-color: #fff;*/
+
+	/*background-color: #CED0CE;*/
+	background-color: #fff;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -401,6 +401,7 @@ line-height: 63px;
 	position: relative;
 	z-index: 400;
 	margin: 40px 20px;
+	color: #3F403F;
 }
 
 @media only screen and (max-width:650px){
