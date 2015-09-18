@@ -178,8 +178,8 @@ body,
 
 /* Effect 2: Reveal */
 .st-effect-2.stmenuopen .st-pusher {
-	-webkit-transform: translate3d(180px, 0, 0);
-	transform: translate3d(180px, 0, 0);
+	-webkit-transform: translate3d(170px, 0, 0);
+	transform: translate3d(170px, 0, 0);
 }
 
 .st-effect-2.stmenu {
