@@ -23,9 +23,5 @@ gulp.task('serve', function() {
       //}
       }
     });
-    gulp.watch(["./*.html", "./css/*.css"]).on('change', sync.reload);
-});
-
-gulp.task('default', function () {
-   console.log('Hello world!');
+    gulp.watch(["./*.html", "./css/*.css", "./js/*.js"]).on('change', sync.reload);
 });
