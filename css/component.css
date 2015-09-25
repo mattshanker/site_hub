@@ -15,7 +15,8 @@ body,
 
 .st-content {
 	overflow-y: scroll;
-	background: #f3efe0;
+	/*background: #f3efe0;*/
+	background: #fff;
 }
 
 .st-content,
@@ -101,7 +102,7 @@ body,
 	height: 60px;
 	color: #fff;
 	/*background: #3F403F;*/
-	/*background-color: blue;*/
+	
 	background: #CED0CE;
 	/*-webkit-transition: all 0.5s;
 	transition: all 0.5s;*/
