@@ -68,7 +68,8 @@ body,
 	width: 180px;
 	height: 100%;
 	/*background: #CED0CE;*/
-	background: #FFFFFF;
+	/*background: #999;*/
+	background-color: #E6E8E6;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
@@ -103,8 +104,9 @@ body,
 	height: 60px;
 	color: #3F403F;
 	/*background: #3F403F;*/
-	background: #ffffff;
+	/*background: #ffffff;*/
 	/*background: #CED0CE;*/
+	background-color: #E6E8E6;
 	/*-webkit-transition: all 0.5s;
 	transition: all 0.5s;*/
 }
