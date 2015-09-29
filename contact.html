@@ -19,7 +19,7 @@
 </head>
 
 
-<body >
+<body>
 <div class="content-wrap">
 
         <nav class="topmenu">
@@ -31,8 +31,9 @@
         </nav>
         <nav class="stmenu st-effect-2" id="menu">
           <ul>
-            <li><a href="index.html#about"><i class="fa fa-user"></i>About Me</a></li>
+            <li><a href="#">#####</a></li>
             <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li> -->
             <li><a href="index.html#services"><i class="fa fa-code"></i>Services</a></li>
             <li><a href="index.html#work"><i class="fa fa-briefcase"></i>Work</a></li>
             <li><a href="contact.html"><i class="fa fa-envelope"></i>Contact</a></li>
@@ -46,41 +47,48 @@
       <!-- <div class="st-content-inner"> -->
 
       <div class="menubutton">
-                <button class="button" type="button" id="open-button">Menu</button>
-
+                <button class="button" type="button" id="open-button">
+                <div class="menutog"></div>
+                <div class="menutog2"></div>
+                <div class="menutog"></div>
+              </button>
       </div>
 
-  <div class="contacttitle shadow">
+  <div class="contacttitle">
     <h2>Contact me</h2>
   </div>
+
+<section>
 
 
 <form class="" action="contact.php" method="post">
 
     <label class="" for="name">
       What should I call you?
-    </label>
     <input name="name" placeholder="Your name" value="" class="" type="text" id="name" /><br />
+    </label>
 
     <label class="" for="email">
       Where can I send you email?
-    </label>
     <input name="email" placeholder="Your email" class="" type="email" id="email" /><br />
+    </label>
 
     <label class="" for="url">
       Do you have a website already?
-    </label>
     <input placeholder="URL" name="url" type="url" id="website" /><br />
+    </label>
 
    <label class="" for="message">
      Your message (1000 characters max)
-   </label>
     <textarea name="message" autocomplete="off" maxlength="1000" placeholder=""></textarea>
-
+   </label>
+      <div class="">
         <button id="submit" type="submit">SEND</button>
 
-</form>
+      </div>
 
+</form>
+</section>
 
 </div>
 </div>
