@@ -67,9 +67,10 @@ body,
 	visibility: hidden;
 	width: 180px;
 	height: 100%;
+
 	/*background: #CED0CE;*/
-	/*background: #999;*/
-	background-color: #E6E8E6;
+	background-color: #999;
+	/*background-color: #E6E8E6;*/
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
@@ -106,7 +107,8 @@ body,
 	/*background: #3F403F;*/
 	/*background: #ffffff;*/
 	/*background: #CED0CE;*/
-	background-color: #E6E8E6;
+	/*background-color: #E6E8E6;*/
+	background-color: #999;
 	/*-webkit-transition: all 0.5s;
 	transition: all 0.5s;*/
 }
