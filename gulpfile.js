@@ -1,5 +1,5 @@
 var gulp          = require('gulp');
-var sync          = require('browser-sync').create();
+var bsync          = require('browser-sync').create();
 var autoprefixer  = require('gulp-autoprefixer');
 var sass          = require('gulp-sass');
 // build task
@@ -16,14 +16,14 @@ gulp.task('build', function () {
 });
 // Static server
 gulp.task('serve', function() {
-    sync.init({
+    bsync.init({
         server: {
             baseDir: "./",
-            browser: "google chrome, firefox, Safari",
-            notify: false,
+            //browser: "google chrome, firefox, Safari",
+            //notify: false
   }
 });
-    gulp.watch(["./*.html", "./css/*.css", "./css/*.scss", "./js/*.js"]).on('change', sync.reload);
+    gulp.watch(["./*.html", "./css/*.css", "./css/*.scss", "./js/*.js"]).on('change', bsync.reload);
 });
 //concat/min/gzip html/css/js
 
