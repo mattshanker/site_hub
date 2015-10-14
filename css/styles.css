@@ -66,7 +66,7 @@ table {
 --------------------------------------- */
 html {
 		width: 100%;
-  	font-family: 'Lato', sans-serif;
+  		font-family: 'Lato', sans-serif;
 		height: 100%;
 		padding: 0;
 		margin: 0 auto;
@@ -128,14 +128,12 @@ h2{
 	font-size: 3em;
 	}
 h3{
-	font-size: 2.5em;
+	font-size: 2em;
 	}
 h4{
 	font-size: 1.5em;
 	}
-p{
-	font-size: 1.2em;
-}
+
 }
 
 @media only screen and (min-width: 480px){
@@ -240,9 +238,12 @@ p{
 		padding-top: 45px;
 	}
 	.header-title{
-		font-size: 250%;
-		/*font-family: OstrichSans-Bold, sans-serif;*/
 		color: #3F403F;
+		height: auto;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		z-index: 8000;
 	}
 
 	.header-svg{
@@ -312,18 +313,25 @@ p{
 	@media only screen and (max-width:650px){
 		.header{
 			position: relative;
-			z-index: 5000;
-			height: 90%;
+			z-index: 50;
+			background-image: url(http://placekitten.com/400/700);			
 			height: 100%;
 			width: 100%;
 			/*background-color: #3F403F;*/
-			background-color: #fff;
+
+		}
+		.header-bg{
 
 		}
 		.header-title{
-			padding-top: 4em;
-			font-size: 150%;
+			background-color: #fff;
+			color: #3F403F;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			z-index: 500;
 		}
+
 		svg{
 			width: 80%;
 			height: auto;
@@ -613,11 +621,6 @@ p{
 
 }
 
-
-	h1, h2, h3, h4, h5, h6{
-		text-align: center;
-	}
-
 /*about section styles*/
 
 .iconspan{
@@ -902,6 +905,8 @@ p{
 	color:#333;
 
 }
+
+
 @media only screen and (max-width:650px){
 .work-section{
 	z-index: 90;
@@ -912,12 +917,10 @@ p{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-justify-content: space-around;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
-	-webkit-align-items: flex-end;
-	-ms-flex-align: end;
-	align-items: center;
+	justify-content: space-between;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
@@ -934,12 +937,15 @@ p{
 	padding-top: 2em;
 }
 .work-content{
-	min-width: 300px;
-	height: 250px;
+	width: 250px;
+	height: 200px;
 	position: relative;
 	z-index: 500;
 	color: #eee;
-	margin: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 	background-color: #777;
 	transition: all .3s;
