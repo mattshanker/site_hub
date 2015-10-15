@@ -590,7 +590,7 @@ h4{
 		padding:1em;
 	}
 	.services-header{
-		height: 100px;
+		height: 55px;
 		width: 100%;
 		position: relative;
 		z-index: 300;
@@ -699,7 +699,7 @@ h4{
 			text-align: center;
 			width: 100%;
 			/*background-color: #fff;*/
-			height: auto;
+			height: 55px;
 			position: relative;
 			background-color: #CED0CE;
 			z-index: 4000;
@@ -792,7 +792,7 @@ h4{
 	.inbound-header{
 		z-index: 700;
 		position: relative;
-		height: auto;
+		height: 55px;
 		margin-left: auto;
 		margin-right: auto;
 		/*display: block;*/
@@ -928,7 +928,7 @@ h4{
 }
 .work-section-intro{
 	text-align: center;
-	height: 150px;
+	height: 55px;
 	width: 100%;
 	color: #3F403F;
 	/*background-color: #E6E8E6;*/

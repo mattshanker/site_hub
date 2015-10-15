@@ -11,8 +11,9 @@
     "start": "brunch watch --server"
   },
   "dependencies": {
+    "css-brunch": ">= 1.0 < 1.9",
     "javascript-brunch": ">= 1.0 < 1.9",
-    "css-brunch": ">= 1.0 < 1.9"
+    "waypoints": "^4.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.8.2",
