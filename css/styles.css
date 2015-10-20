@@ -38,7 +38,7 @@ body {
 	line-height: 1.5;
 	position: relative;
 	height:100%;
-	overflow-x:hidden;
+	/*overflow-x:hidden;*/
 	font-size: 100%;
 	padding: 0;
 
@@ -70,7 +70,7 @@ html {
 		height: 100%;
 		padding: 0;
 		margin: 0 auto;
-		overflow-x:hidden;
+		/*overflow-x:hidden;*/
 	}
 
 .content-wrap{
@@ -213,7 +213,6 @@ h4{
 	padding: 0.5em 1em;
 	background: transparent;
 	color: #000;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: 1em;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -223,19 +222,20 @@ h4{
 	right: 0;
 	border-radius: 2px;
 	position: fixed;
-	z-index: 1000;
+	z-index: 100000;
 }
 
 
 	.header{
 		position: relative;
 		z-index: 5000;
-		height: auto;
+		height: 100%;
 		width: 100%;
 		/*background-color: #3F403F;*/
 		background-color: #eee;
 		/*background-color: #E6E8E6;*/
 		padding-top: 45px;
+		background-image: url(http://placehold.it/350x150);
 	}
 	.header-title{
 		color: #3F403F;
@@ -263,7 +263,7 @@ h4{
 		background-color: #999;
 		position: fixed;
 		top: 0;
-		z-index: 500;
+		z-index: 500000;
 		width: 100%;
 		height: auto;
 		color: #3F403F;
@@ -310,11 +310,14 @@ h4{
 
 	}
 
+
+
 	@media only screen and (max-width:650px){
+
 		.header{
 			position: relative;
 			z-index: 50;
-			background-image: url(http://placekitten.com/400/700);			
+			background-image: url(http://placehold.it/350x150);
 			height: 100%;
 			width: 100%;
 			/*background-color: #3F403F;*/
@@ -347,7 +350,7 @@ h4{
 			height: 55px;
 			color: #3F403F;
 			/*color: #fff;*/
-		  /*background-color: lightgray;*/
+		  	/*background-color: lightgray;*/
 			background: -webkit-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.23) 100%);
 			background: -o-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.23) 100%);
 			background: linear-gradient(to right, rgba(0,0,0,0) 75%, rgba(0,0,0,0.23) 100%);
@@ -428,72 +431,6 @@ h4{
 /*end header styles*/
 
 
-.intro{
-	width: 100%;
-	height: auto;
-	position: relative;
-	z-index: 200;
-	/*background-color: #fff;*/
-	background-color: #E6E8E6;
-	/*background-color: #CED0CE;*/
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-justify-content: space-around;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-}
-.content1{
-	width: 320px;
-	/*width: auto;*/
-	float: left;
-	margin: 40px 20px;
-	color: #3F403F;
-	padding: 1em;
-	position: relative;
-	z-index: 500;
-}
-
-@media only screen and (max-width:650px){
-	.intro{
-		width: 100%;
-		display: block;
-		height: 100%;
-		position: relative;
-		z-index: 500;
-		background-color: #fff;
-
-		/*background-color: #E6E8E6;*/
-
-	}
-	section.header{
-		height: 40em;
-	}
-	.content1{
-		width: 100%;
-		/*background-color: #CED0CE;*/
-		background-color: #fff;
-		height: auto;
-		margin: 0 auto;
-		padding-bottom: 3em;
-
-	}
-	.content1 p{
-		max-width: 320px;
-		/*padding-bottom: 20px;*/
-		/*margin: 40px 20px;*/
-		margin-left: auto;
-		margin-right: auto;
-		height: auto;
-	}
-	.content1:first-of-type{
-		padding-top: 3em;
-	}
-}
 @media only screen and (max-width:480px) {
 	section.header{
 		height:24em;
@@ -509,9 +446,7 @@ h4{
 	width: 100%;
 	position: relative;
 	z-index: 300;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
+	
 	background-color: #CED0CE;
 	/*background-color: #9FB8AD;*/
 	color: #3F403F;
@@ -780,7 +715,7 @@ h4{
 @media only screen and (max-width: 650px){
 
 	.inbound-section{
-		z-index: 999;
+		z-index: 500;
 		position: relative;
 		width:100%;
 		height:auto;
@@ -853,16 +788,14 @@ h4{
 }
 .work-section-intro{
 	text-align: center;
-	height: auto;
+	height: 55px;
 	width: 100%;
 	color: #3F403F;
 	background-color: #E6E8E6;
-	padding-top: 2em;
-	padding-bottom: 8em;
+	/*padding-top: 2em;*/
+	/*padding-bottom: 8em;*/
 }
-.work-section-intro p{
-	padding-bottom: 2em;
-}
+
 .work-content{
 	max-width: 300px;
 	height: 250px;
@@ -934,7 +867,7 @@ h4{
 	/*background-color: #E6E8E6;*/
 	background-color: #eee;
 	/*background-color: lightsteelblue;*/
-	padding-top: 2em;
+	/*padding-top: 2em;*/
 }
 .work-content{
 	width: 250px;
@@ -965,6 +898,22 @@ h4{
 	align-self: flex-end;*/
 
 	}
+	.work-content:hover{
+
+	background-color: #E6E8E6;
+	color:#333;
+
+	}
+	.work-content p{
+	-ms-flex-item-align: end;
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+	color: #777;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	}
+	
 }
 
 /*end work style*/
