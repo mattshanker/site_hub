@@ -232,18 +232,23 @@ h4{
 		height: 100%;
 		width: 100%;
 		/*background-color: #3F403F;*/
-		background-color: #eee;
+		/*background-color: #eee;*/
 		/*background-color: #E6E8E6;*/
-		padding-top: 45px;
-		background-image: url(http://placehold.it/350x150);
+		/*padding-top: 45px;*/
+		/*background-image: url(http://placehold.it/350x150);*/
+		background: url(../img/desk.jpg) top center no-repeat;
+		background-size: cover;
 	}
 	.header-title{
-		color: #3F403F;
+		/*color: #3F403F;*/
+		color: #E6E8E6;
 		height: auto;
-		bottom: 0;
-		left: 0;
-		position: absolute;
+		text-align: center;
+		position: relative;
 		z-index: 8000;
+		top: 15%;
+		-webkit-transform:rotateX(-45deg);
+		transform:rotateX(-45deg);
 	}
 
 	.header-svg{
@@ -317,7 +322,9 @@ h4{
 		.header{
 			position: relative;
 			z-index: 50;
-			background-image: url(http://placehold.it/350x150);
+			/*background-image: url(http://placehold.it/350x150);*/
+			background: url(../img/desk.jpg) top center no-repeat;
+			background-size: cover;
 			height: 100%;
 			width: 100%;
 			/*background-color: #3F403F;*/
@@ -327,12 +334,12 @@ h4{
 
 		}
 		.header-title{
-			background-color: #fff;
+			/*background-color: #fff;*/
 			color: #3F403F;
-			bottom: 0;
-			left: 0;
-			position: absolute;
+			position: relative;
 			z-index: 500;
+			color: #E6E8E6;
+			top:10%;
 		}
 
 		svg{
@@ -351,8 +358,6 @@ h4{
 			color: #3F403F;
 			/*color: #fff;*/
 		  	/*background-color: lightgray;*/
-			background: -webkit-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.23) 100%);
-			background: -o-linear-gradient(left, rgba(0,0,0,0) 75%, rgba(0,0,0,0.23) 100%);
 			background: linear-gradient(to right, rgba(0,0,0,0) 75%, rgba(0,0,0,0.23) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#3b000000',GradientType=1 );
 		}
@@ -431,12 +436,6 @@ h4{
 /*end header styles*/
 
 
-@media only screen and (max-width:480px) {
-	section.header{
-		height:24em;
-	}
-}
-
 .intro-icon{
 	text-align: center;
 }
@@ -456,43 +455,43 @@ h4{
 }
 
 .services-section{
-	color: #3F403F;
+	color: #CED0CE;
 	height: 100%;
 	width: 100%;
+	position: relative;
+	z-index: 3000;
 	/*background-color: #CED0CE;*/
 	/*background-color: #E6E8E6;*/
-	background-color: #fff;
+	/*background-color: #fff;*/
+	background: url(../img/code-bg.jpg) top center no-repeat;
+	background-size: cover;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-justify-content: space-around;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
 	vertical-align: middle;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-
+	
 }
 
 .services-content{
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	max-width: 300px;
 	height: auto;
 	position: relative;
 	z-index: 400;
 	/*margin: 40px 20px;*/
 	/*background-color: #fff;*/
-	color: #3F403F;
-	padding: 1em;
-
-	-webkit-flex-direction: row;
-
-	-ms-flex-direction: row;
-
-	flex-direction: row;
+	color: #CED0CE;
+	/*color: #3F403F;*/
+	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 
@@ -506,30 +505,28 @@ h4{
 		display: block;
 		position: relative;
 		z-index: 300;
-		padding-top: 5em;
-
+		padding-top: 2em;
+		/*padding-bottom: 2em;*/
 	}
 	.services-content{
 		max-width: 300px;
-		height: auto;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		position: relative;
 		z-index: 400;
-
 	}
 	.services-content:first-of-type{
 		padding-top: 2em;
 	}
 	.services-content p{
-		padding:1em;
+		padding-bottom:1em;
 	}
 	.services-header{
 		height: 55px;
 		width: 100%;
 		position: relative;
 		z-index: 300;
-
 		-webkit-justify-content: center;
 		-ms-flex-pack: center;
 		justify-content: center;
@@ -538,51 +535,37 @@ h4{
 		align-items: center;
 		background-color: #CED0CE;
 		/*background-color: #9FB8AD;*/
+		text-align: center;
 	}
 
 }
-
-
-.subtitle p{
-	text-align: center;
-	max-width: 650px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 2px solid black;
-	padding: 10px;
-	height: auto;
-	position: relative;
-	z-index: 3000;
-
-}
-
 /*about section styles*/
 
 .iconspan{
 	text-align: center;
 }
-
-
 .dev-intro{
 	text-align: center;
 	width: 100%;
-	background-color: #CED0CE;
+	/*background-color: #CED0CE;*/
 	height: auto;
 	position: relative;
 	/*background-color: #E6E8E6;*/
 	color: #3F403F;
+	/*background-color: #00BCD4;*/
 	z-index: 4000;
 }
-
 .dev-section{
 	z-index: 900;
 	position: relative;
 	width:100%;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 	/*background-color: #CED0CE;*/
+	background-color: #1976D2;
 	margin: 0 auto;
 	padding: 0;
-	color: #3F403F;
+	/*color: #3F403F;*/
+	color: #E6E8E6;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -602,7 +585,6 @@ h4{
 
 }
 .dev-content{
-	float: left;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -619,16 +601,19 @@ h4{
 			z-index: 1000;
 			display: block;
 			position: relative;
-			width: auto;
+			width: 100%;
 			height: auto;
 			/*background-color: #fff;*/
+			background-color: #1976D2;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 300px;
 		}
 		.dev-content p{
-			max-width: 300px;
-			padding-top: 1em;
-			display: block;
-			position: relative;
-			height: auto;
+			padding: 1em 0;
+			/*display: block;*/
+			/*position: relative;*/
+			/*height: auto;*/
 		}
 		.dev-intro{
 			text-align: center;
@@ -636,22 +621,24 @@ h4{
 			/*background-color: #fff;*/
 			height: 55px;
 			position: relative;
-			background-color: #CED0CE;
+			/*background-color: #CED0CE;*/
 			z-index: 4000;
 			/*padding-top: 20px;*/
 			display: block;
 		}
 		.dev-section{
+			background-color: #1976D2;
 			z-index: 1200;
 			position: relative;
 			width:100%;
 			/*background-color: #CED0CE;*/
-			background-color: #fff;
-			margin: 0 auto;
-			padding: 1em;
+			/*background-color: #fff;*/
+			/*padding: 1em;*/
 			color: #3F403F;
-			height: 100%;
+			height: auto;
+			box-sizing:border-box;
 			display: block;
+			overflow: scroll;
 		}
 	}
 
@@ -660,7 +647,6 @@ h4{
 	position: relative;
 	width:100%;
 	height:auto;
-	/*background: rgba(137, 183, 170, 0.2);*/
 	background-color: #9FB8AD;
 	color: #3F403F;
 }
@@ -692,29 +678,26 @@ h4{
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-
 }
-.inbound-content-2{
+.inbound-content{
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	z-index: 100;
 	position: relative;
 	height: auto;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
 }
-.inbound-content-2 h2{
-	width: 100%;
-}
-.inbound-content-2 p{
+.inbound-content p{
 	max-width: 300px;
 }
 
 @media only screen and (max-width: 650px){
 
 	.inbound-section{
+		
 		z-index: 500;
 		position: relative;
 		width:100%;
@@ -723,6 +706,8 @@ h4{
 		/*padding: 0;*/
 		display: block;
 		padding-bottom: 2em;
+		padding-top: 1em;
+		background-color: #66CC66;
 	}
 	.inbound-header{
 		z-index: 700;
@@ -732,25 +717,24 @@ h4{
 		margin-right: auto;
 		/*display: block;*/
 		text-align: center;
-		padding-bottom: 2em;
-		/*background-color: gray;*/
 		background-color: #E6E8E6;
 		display: inline-block;
 		text-align: center;
+		padding-bottom: 1em;
 	}
-	.inbound-header h5{
-		max-width: 300px;
-	}
-	.inbound-content-2{
-		padding-top: 1em;
+	
+	.inbound-content{
+		/*padding-top: 1em;*/
 		z-index: 100;
 		position: relative;
 		display: block;
-		width: auto;
 		height: auto;
+		max-width: 300px;
+		/*margin: 20px 40px;*/
+		margin-right: auto;
+		margin-left: auto;
 	}
-	.inbound-content-2 p{
-		margin: 20px 40px;
+	.inbound-content p{
 		display: block;
 		position: relative;
 	}
@@ -764,7 +748,7 @@ h4{
 	z-index: 90;
 	position: relative;
 	width:100%;
-	height:auto;
+	height:100%;
 	/*background: url(../work.jpg) top no-repeat;*/
 	/*background-color: #E6E8E6;*/
 	background-color: #fff;
@@ -850,6 +834,8 @@ h4{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	-webkit-align-items: flex-start;
 	-ms-flex-align: start;
@@ -858,6 +844,7 @@ h4{
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	text-align: center;
+	
 }
 .work-section-intro{
 	text-align: center;

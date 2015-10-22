@@ -13,6 +13,13 @@ gulp.task('build', function () {
             cascade: false
         }))
         .pipe(gulp.dest('./css/'));
+    return gulp.src('img/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('./img/'));
 });
 // Static server
 gulp.task('serve', function() {
@@ -21,6 +28,7 @@ gulp.task('serve', function() {
             baseDir: "./",
             //browser: "google chrome, firefox, Safari",
             //notify: false
+            injectChanges: true
   }
 });
     gulp.watch(["./*.html", "./css/*.css", "./css/*.scss", "./js/*.js"]).on('change', bsync.reload);
