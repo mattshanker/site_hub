@@ -1,7 +1,7 @@
-var gulp          = require('gulp');
+var gulp           = require('gulp');
 var bsync          = require('browser-sync').create();
-var autoprefixer  = require('gulp-autoprefixer');
-var sass          = require('gulp-sass');
+var autoprefixer   = require('gulp-autoprefixer');
+var sass           = require('gulp-sass');
 // build task
 //todo
 //do something to imgs on build
