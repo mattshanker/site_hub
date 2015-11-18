@@ -28,64 +28,40 @@
 
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
+    <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One|Cabin|Montserrat+Subrayada' rel='stylesheet' type='text/css'>
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
     
-    <script src="/js/header.js"></script>
 
     <!-- <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    
-
   </head>
 
   <body>
-  <div class="content-wrap">
 
-          <nav class="topmenu">
-            <ul>
-              <li><a target="_blank" href="https://codepen.io/mattshanker"><i class="fa fa-fw fa-codepen"></i></a></li>
-              <li><a target="_blank" href="https://github.com/mattshanker"><i class="fa fa-fw fa-github"></i></a></li>
-              <li><a target="_blank" href="https://twitter.com/mattshanker"><i class="fa fa-fw fa-twitter"></i></a></li>
-            </ul>
-          </nav>
-          <nav class="stmenu st-effect-2" id="menu">
-            <ul>
-              
-              <li><a href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
-              <li><a href="#about"><i class="fa fa-fw fa-user"></i>About</a></li>
-              <li><a href="#services"><i class="fa fa-fw fa-code"></i>Services</a></li>
-              <li><a href="#work"><i class="fa fa-fw fa-briefcase"></i>Work</a></li>
-              <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
-            </ul>
-          </nav>
-
-      <!-- <div class="content-wrap"> -->
-  <div class="st-pusher">
-    <div class="st-container" id="st-container">
-      <div class="st-content">
-        <!-- <div class="st-content-inner"> -->
-    
-        <div class="menubutton">
-                <a class="menubutton button" id="open-button">
-                  <div class="menutog1" id="menutog1"></div>
-                  <div class="menutog2" id="menutog2"></div>
-                  <div class="menutog3" id="menutog3"></div>
-                </a>
-        </div>
-
-    <header class="header" id="home">
-      <nav class="nav--fixed">
-        <ul>
-          <li><a href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
-          <li><a href="#about"><i class="fa fa-fw fa-user"></i>About</a></li>
-          <li><a href="#services"><i class="fa fa-fw fa-code"></i>Services</a></li>
-          <li><a href="#work"><i class="fa fa-fw fa-briefcase"></i>Work</a></li>
-          <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+    <nav class="navfixed" id='navfixed'>
+      
+      <ul class="contact--nav">
+          <li><a target="_blank" href="https://codepen.io/mattshanker"><i class="fa fa-fw fa-codepen"></i></a></li>
+          <li><a target="_blank" href="https://github.com/mattshanker"><i class="fa fa-fw fa-github"></i></a></li>
+          <li><a target="_blank" href="https://twitter.com/mattshanker"><i class="fa fa-fw fa-twitter"></i></a></li>
+      </ul>
+        
+        <ul class="mainnav">
+          <a href="#header">  <li id="btnHome" class="active"><i class="fa fa-fw fa-home"></i></li></a>
+          <a href="#about">   <li id="btnAbout"><i class="fa fa-fw fa-user"></i></li></a>
+          <a href="#services"><li id="btnServices"><i class="fa fa-fw fa-code"></i></li></a>
+          <a href="#work">    <li id="btnWork"><i class="fa fa-fw fa-briefcase"></i></li></a>
+          <a href="#contact"> <li id="btnContact"><i class="fa fa-fw fa-envelope"></i></li></a>
         </ul>
-      </nav>
+
+    </nav>
+
+  <div class="content-wrap">
+    <header class="header" id="header">
 
       <div class="header-title">
         <h2>
@@ -93,49 +69,64 @@
        </h2>
 
        <p>
-         I'm Matt and I am a front-end web developer
+         
        </p>
       </div>
     </header>
 
 <!-- about me html -->
+
   <section class="about" id="about">
     <div>
     <h4>A little about me...</h4>
-      <p>I'm a self-taught web developer from NJ building useful things like websites, landing pages, and . </p>
     </div>    
   </section>
-
 
 <!-- end about me -->
 
     <section class="services-section" id="services">
-        <h3>Services</h3>
-      <div class="services-content">
-        <h4>Web development</h4>
-        <div class="iconspan">
+        <div class="services-header">
+          <h3>Services</h3>
+        </div>
+  </section>
+      
+    <div class="services-section">
+      <div class="services-content" href="#" id="scone">
+        
+        <h3>Web Development</h3>
+          <p>Development is the implementation of design through code.</p>
           <span>
             <i class='fa fa-2x fa-laptop'></i>
             <i class='fa fa-3x fa-tablet'></i>
             <i class='fa fa-4x fa-mobile'></i>
           </span>
-        </div>
       </div>
+      
 
-    <div class="services-content">
-      <h4>Inbound Marketing</h4>
-      <div class="iconspan">
+    <div class="services-content" id="sctwo">
+      <h3>Inbound Marketing</h3>
+        <p>Inbound marketing gives customers a clear path to their goals and reduces friction.</p>
+      
+      <span>
         <i class='fa fa-3x fa-map-signs'></i>
-      </div>
+      </span>
+      
+    
+    
     </div>
-  </section>
+    </div>
 
-<section class="dev-section">
-      <h3>Web Development</h3>
+
+<section class="dev-section" id='devel'>
+      <div class="services-header">
+          <h3>Web Dev</h3>
+        </div>
+    </section>
+    
+<div class="dev-section">
+  
+
     <div class="dev-content">
-      <p>
-        Development is the implementation of design through code.
-      </p>
         <h4>Responsive Web Design</h4>
             <p>
                Media queries, adaptive content and grid layout let your site respond to fit any client's screen no matter whether it's desk or pocket size.
@@ -171,20 +162,20 @@
         Great UI/UX (User Interface/User Experience) design shows you're detail oriented and consciously thinking about your customers experience on the other side of the transaction. Make the right tools accessible to your customers and you can create new customers at any time of day.
       </p>
     </div> -->
-</section>
+  </div>
+
 
 <!-- end webdev content -->
 
 <!-- start inbound content -->
 
   <section class="inbound-section">
-          <h3>Inbound Marketing</h3>
-          <p>Inbound marketing gives customers a clear path to their goals and reduces friction.</p>
+          
         <div class="inbound-content">
               <h4>Automation</h4>
                 <p>
                   Marketing automation gives your customers a better experience by being ready to assist them any time. As the owner, you can spend your time with qualified customers and your customers get timely answers to their questions.
-          </div>
+        </div>
 
         <div class="inbound-content">
               <div class="iconspan">
@@ -194,7 +185,7 @@
                     <li><i class='fa fa-3x fa-users'></i>return customers</li>
                   </ul>
               </div>
-          </div>
+        </div>
 
         <div class="inbound-content">
                 <h4>Onboarding</h4>
@@ -206,9 +197,7 @@
                    and you back your time to focus on delivering the best product or service for your customers. If you go over the same issues with each new customer, onboarding is for you.
                 </p>
             </div>
-    <div class="inbound-content">
-      
-    </div>
+    
   </section>
 
 <!-- end inbound content -->
@@ -217,8 +206,9 @@
 <!-- start work section -->
   <div class="work-section-intro" id="work">
     <h3><i class="fa fa-briefcase"></i>Work</h3>
-    </div>
-  <section class="work-section" >
+  </div>
+
+  <section class="work-section">
 
       <div class="work-content">
       <h4>Sample project</h4>
@@ -226,24 +216,28 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
       </p>
       </div>
+
       <div class="work-content">
         <h4>Sample project</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         </p>
       </div>
+
       <div class="work-content">
         <h4>Sample project</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing 
         </p>
       </div>
+
       <div class="work-content">
         <h4>Sample project</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
         </p>
       </div>
+
     </section>
 
 <section class="contact" id="contact">  
@@ -263,8 +257,6 @@
     </ul>  
 </footer> 
 
-  <script src="js/classie.js"></script>
-  <script src="js/main.js"></script>
 
 </div>
 
@@ -274,7 +266,11 @@
   </div>
   </div>
   </div>
+  <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="node_modules/waypoints/lib/shortcuts/inview.min.js"></script>
 
+  
+  <script src="js/main.js"></script>
 
     <!-- GA code -->
     <script>

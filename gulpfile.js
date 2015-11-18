@@ -2,10 +2,11 @@ var gulp           = require('gulp');
 var bsync          = require('browser-sync').create();
 var autoprefixer   = require('gulp-autoprefixer');
 var sass           = require('gulp-sass');
+//var concat       = require('gulp-');concat js
 // build task
 //todo
-//do something to imgs on build
 //open more browsers on serve
+//add js concat to build task
 gulp.task('build', function () {
     return gulp.src('css/styles.css')
         .pipe(autoprefixer({

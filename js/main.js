@@ -11,45 +11,53 @@
  */
 	function init() {
 
-		var bodyEl = document.body,
-		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		tog1 = document.getElementById( 'menutog1' ),
-		tog2 = document.getElementById( 'menutog2' ),
-		tog3 = document.getElementById( 'menutog3' ),
-		isOpen = false;
+	var bodyEl = document.body,
 		
+		isOpen = false;				
 		
-		// close the menu element if the target it´s not the menu element or one of its descendants..
-		content.addEventListener( 'click', function(ev) {
-			var target = ev.target;
-			if( isOpen && target !== openbtn ) {
-				toggleMenu();
-			}
-		});
-		
-		openbtn.addEventListener( "click",   toggleMenu, false);
-		
-		function toggleMenu () {
-			if (isOpen == false) {
-			classie.add( bodyEl, 'stmenuopen' ),
-			classie.add( tog1, 'opentog1' ),
-			classie.add( tog2, 'opentog2' ),
-			classie.add( tog3, 'opentog3' ),
-			isOpen = true;			
-		}
+	//function for fading content in and out onclick
+	//update sidebar icons for each section
+	//highlight sidebar icon when section is in view (waypoints)
 
-			else {
-			classie.remove( bodyEl, 'stmenuopen' ),
-			classie.remove(tog1, 'opentog1' ),
-			classie.remove(tog2, 'opentog2' ),
-			classie.remove(tog3, 'opentog3' ),
-			isOpen = false;
-		}		
-	};
+	$(window).load(function(){
+	//declare each nav button as a var
+		var h = document.getElementById('btnHome'),
+			a = document.getElementById('btnAbout'),
+			s = document.getElementById('btnServices'),
+			w = document.getElementById('btnWork'),
+			c = document.getElementById('btnContact');
+	
+		
+	
+		var	inview = new Waypoint.Inview({
+				element: document.getElementById('about'),
+				enter: function(){
+					$(h).toggleClass('active');
+					$(a).toggleClass('active');
+				}
+			})
+
+		var	wp = new Waypoint.Inview({
+				element: document.getElementById('services'),
+				enter: function(){
+					$(a).toggleClass('active');
+					$(s).toggleClass('active');
+				}			
+			})
+
+	//declare each section of content as a var and hidden onLoad
+	$(s).click(function(e){
+		e.preventDefault();
+		s.addClass('active'),
+		scrollTo(s);
+		$(h).removeClass('active');
+	});	
+	
+
 }
+)
 
+}
 init();
-
 
 
