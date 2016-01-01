@@ -9,55 +9,78 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
-	function init() {
 
-	var bodyEl = document.body,
-		
-		isOpen = false;				
-		
-	//function for fading content in and out onclick
-	//update sidebar icons for each section
-	//highlight sidebar icon when section is in view (waypoints)
-
-	$(window).load(function(){
-	//declare each nav button as a var
-		var h = document.getElementById('btnHome'),
-			a = document.getElementById('btnAbout'),
-			s = document.getElementById('btnServices'),
-			w = document.getElementById('btnWork'),
-			c = document.getElementById('btnContact');
+		var mo = document.getElementById("modal"),
+			co = document.getElementById("modal-content"),
+			c = document.getElementById('clsbtn'),
+			h = document.getElementById('header'),
+			tl = new TimelineMax(),
+			mot = document.getElementById('motrig'),
+			dev = document.getElementById('modalt1'),	
+			inb = document.getElementById('modalt2'),
+			ser = document.getElementById('services'),			
+			devs = document.getElementById('devel'),			
+			inbs = document.getElementById('inbound'),
+			wo = document.getElementById('btnWork'),
+			se = document.getElementById('btnServices'),
+			con = document.getElementById('btnContact'),
+			wos = document.getElementById('work'),
+			sco = document.getElementById('scone'),
+			sct = document.getElementById('sctwo'),
+			devp = sco.getElementsByTagName('p'),			
+			inbp = sct.getElementsByTagName('p'),
+			h = document.getElementById('htitle');
 	
-		
+	function clmo () {
+		tl.to([mo, co, h, mot], 0.5, {css: {className:"-=modal-is-visible"}});
+	}
 	
-		var	inview = new Waypoint.Inview({
-				element: document.getElementById('about'),
-				enter: function(){
-					$(h).toggleClass('active');
-					$(a).toggleClass('active');
-				}
-			})
+	function wid () {
+		var cssw = window.innerWidth;
+			
+			h.innerHTML = cssw;
+	}
 
-		var	wp = new Waypoint.Inview({
-				element: document.getElementById('services'),
-				enter: function(){
-					$(a).toggleClass('active');
-					$(s).toggleClass('active');
-				}			
-			})
+	
+	mot.addEventListener('click', showModal, false); 
 
-	//declare each section of content as a var and hidden onLoad
-	$(s).click(function(e){
+		function showModal (e) {
 		e.preventDefault();
-		s.addClass('active'),
-		scrollTo(s);
-		$(h).removeClass('active');
-	});	
-	
+			tl.to([mo, h, mot, co], 0.5, {css: {className:"+=modal-is-visible"}, ease:Bounce.easeOut});			
+			// tl.to(co, 0.5, {visibility:'visible', top: '0', ease:Bounce.easeOut});			
+				console.log('modal toggled')
+	};
 
-}
-)
+	c.onclick = function (e) {
+ 		e.preventDefault();
+ 		clmo();
+			console.log('modal closed')
+ 	}
 
-}
-init();
+ 	dev.onclick = function (e) {
+ 		
+ 		e.preventDefault();
+ 			tl.to([inbp, inbs, wos], 0.3, {css: {display: "none"}});
+ 			tl.to([devs, devp], 0.5, {css: {display: "block", top:"-100"}, ease:Power1.easeOut});
+ 		h.innerHTML = 'web dev';
+ 			
+ 	}
+ 	
+ 	inb.onclick = function (e) {
+ 		e.preventDefault();
+ 			tl.to([devp, devs, wos], 0.5, {css: {display: "none", top: "100"}});
+ 			tl.to([inbs, inbp], 0.5, {css: {display: "block", top: "-100"}, ease:Power1.easeOut});
+ 		h.innerHTML = 'inbound mktg';
+ 	}
+ 	
+ 	wo.onclick = function (e) {
+ 		e.preventDefault();
+ 			tl.to([devp, inbp, devs, inbs], 0.3, {css:{display:"none", top: "100"}});
+ 			tl.to(wos, 0.3, {css:{display:"block", top: "-100"}});
+ 		h.innerHTML = 'work';
+ 	}
+ 	
 
-
+ 	wid();
+ 	console.log('functional function!')
+ 	

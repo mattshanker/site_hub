@@ -24,237 +24,319 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
-    <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One|Cabin|Montserrat+Subrayada' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One|Cabin' rel='stylesheet' type='text/css'>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     
 
     <!-- <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/modal.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
   </head>
 
   <body>
-
-    <nav class="navfixed" id='navfixed'>
-      
-      <ul class="contact--nav">
-          <li><a target="_blank" href="https://codepen.io/mattshanker"><i class="fa fa-fw fa-codepen"></i></a></li>
-          <li><a target="_blank" href="https://github.com/mattshanker"><i class="fa fa-fw fa-github"></i></a></li>
-          <li><a target="_blank" href="https://twitter.com/mattshanker"><i class="fa fa-fw fa-twitter"></i></a></li>
-      </ul>
-        
-        <ul class="mainnav">
-          <a href="#header">  <li id="btnHome" class="active"><i class="fa fa-fw fa-home"></i></li></a>
-          <a href="#about">   <li id="btnAbout"><i class="fa fa-fw fa-user"></i></li></a>
-          <a href="#services"><li id="btnServices"><i class="fa fa-fw fa-code"></i></li></a>
-          <a href="#work">    <li id="btnWork"><i class="fa fa-fw fa-briefcase"></i></li></a>
-          <a href="#contact"> <li id="btnContact"><i class="fa fa-fw fa-envelope"></i></li></a>
-        </ul>
-
-    </nav>
-
+ 
   <div class="content-wrap">
-    <header class="header" id="header">
+    
+  <div class="cd-modal" id="modal">
+              
+        <svg width="89px" height="112px" viewBox="-60 10 220 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Monitor-+-js" transform="translate(2.000000, 2.000000)">
+            <g id="Monitor-w-stand">
+                <rect id="stand" stroke="#979797" fill="#9B9B9B" x="18" y="49" width="7" height="61"></rect>
+                <rect id="monitor" stroke-opacity="0.849892437" stroke="#000000" stroke-width="2" fill="#000000" x="0" y="0" width="85" height="50" rx="2"></rect>
+            </g>
+            <g id="js" transform="translate(2.000000, 1.000000)">
+                <rect id="laptop" stroke="#DBDBDB" fill="#000000" x="0" y="0" width="80" height="46.8664773" rx="1"></rect>
+                <rect id="line2" fill="#F6A623" x="10.5882353" y="12.925" width="4.70588235" height="2.35"></rect>
+                <rect id="line3" fill="#F6A623" x="10.5882353" y="18.8" width="10.5882353" height="2.35"></rect>
+                <rect id="line4" fill="#F6A623" x="10.5882353" y="24.675" width="8.23529412" height="2.35"></rect>
+                <rect id="line7" fill="#F6A623" x="10.5882353" y="38.775" width="8.23529412" height="2.35"></rect>
+                <rect id="line4p2" fill="#4A4A4A" x="22.3529412" y="24.675" width="16.4705882" height="2.35"></rect>
+                <rect id="line7p2" fill="#4A4A4A" x="21.1764706" y="38.775" width="9.41176471" height="2.35"></rect>
+                <rect id="line1" fill="#4990E2" x="5.88235294" y="7.05" width="10.5882353" height="2.35"></rect>
+                <rect id="line2p2" fill="#7ED321" x="17.6470588" y="12.925" width="27.0588235" height="2.35"></rect>
+                <rect id="line3p2" fill="#7ED321" x="23.5294118" y="18.8" width="41.1764706" height="2.35"></rect>
+                <rect id="line5" fill="#FFFFFF" x="16.4705882" y="29.375" width="16.4705882" height="2.35"></rect>
+                <rect id="line5p3" fill="#FFFFFF" x="42.3529412" y="29.375" width="12.9411765" height="2.35"></rect>
+                <rect id="line5p2" fill="#BD0FE1" x="34.1176471" y="29.375" width="7.05882353" height="2.35"></rect>
+                <rect id="line6" fill="#FFFFFF" x="16.4705882" y="34.075" width="36.4705882" height="2.35"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+        <svg id="desklight" width="100%" height="100%" viewBox="0 0 230 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="desk" transform="translate(0.000000, 92.000000)" fill="#E59B21" fill-opacity="0.610903533">
+                        <rect id="Rectangle-1" x="0" y="0" width="233" height="7" rx="3"></rect>
+                        <rect id="Rectangle-2" x="29" y="6" width="12" height="92" rx="3"></rect>
+                        <rect id="Rectangle-2-Copy" x="184" y="6" width="12" height="92" rx="3"></rect>
+                    </g>
+                    <g id="light" transform="translate(24.000000, 0.000000)">
+                        <path d="M8,12 C9.85020752,13.5330851 13.0073099,12 18.5,12 C27.5,12 26.5,15.3137085 26.5,12 C26.5,8.6862915 25.4035594,0 18.5,0 C11.5964406,0 6,2.6862915 6,6 C6,7.29135584 6.81856596,11.0210618 8,12 Z" id="Oval-4" fill="#000000"></path>
+                        <path d="M18.5,28 C28.7172679,28 37,23.1944204 37,18.5 C37,13.8055796 28.7172679,10 18.5,10 C8.28273213,10 0,13.8055796 0,18.5 C0,23.1944204 8.28273213,28 18.5,28 Z" id="Oval-5" stroke="#979797" fill="#D8D6D8"></path>
+                        <path d="M15.54335,20.1831543 C4.95422322,20.1831543 21.473261,18.1274352 21.473261,15.5915772 C21.473261,13.0557191 18.8183494,11 15.54335,11 C12.2683506,11 15.5433499,15.5915772 21.473261,23.2442058 C27.403172,30.8968344 26.1324767,20.1831543 15.54335,20.1831543 Z" id="Oval-6" stroke="#979797" fill="#FFFFFF"></path>
+                        <rect id="Rectangle-16" fill="#000000" x="20" y="0" width="63" height="4"></rect>
+                        <rect id="Rectangle-16-Copy" fill="#000000" x="21" y="6" width="63" height="4"></rect>
+                        <path d="M51.4408071,98.618518 L51.4408071,-7.17096243 L54.4408071,-7.17096243 L54.4408071,101.829038 L51.4408071,101.829038 L51.4408071,98.618518 Z" id="Rectangle-17" fill="#000000" transform="translate(52.940807, 47.329038) rotate(-326.000000) translate(-52.940807, -47.329038) "></path>
+                        <rect id="Rectangle-17-Copy" fill="#000000" transform="translate(58.000000, 48.192299) rotate(-326.000000) translate(-58.000000, -48.192299) " x="56.5" y="-5.30770051" width="3" height="107"></rect>
+                        <rect id="Rectangle-20" fill="#000000" transform="translate(85.853553, 4.646447) rotate(-315.000000) translate(-85.853553, -4.646447) " x="81.3535534" y="3.14644661" width="9" height="3"></rect>
+                        <rect id="Rectangle-56" fill="#000000" x="18" y="91" width="15" height="2" rx="2"></rect>
+                    </g>
+            </g>
+    
+        </svg>
+  
+                    <svg id="chair" width="100%" height="100%" viewBox="-50 -30 230 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="chair-copy" transform="translate(1.000000, 0.000000)">
+                  <path d="M29.8571429,148 L80.8571429,148 L110,168 C110,168 69.8053438,158 52.5,158 C35.8053438,158 8,168 8,168 L29.8571429,148 Z" id="Rectangle-12" fill="#000000"></path>
+                  <ellipse id="Oval-2" stroke="#979797" fill="#000000" cx="102.5" cy="167.5" rx="6.5" ry="4.5"></ellipse>
+                  <ellipse id="Oval-2-Copy" stroke="#979797" fill="#000000" cx="6.5" cy="167.5" rx="6.5" ry="4.5"></ellipse>
+                  <rect id="Rectangle-13" fill="#000000" x="54" y="100" width="7" height="48"></rect>
+                  <rect id="Rectangle-11" fill="#571E11" x="24" y="0" width="70" height="100" rx="5"></rect>
+        
+                  <rect id="Rectangle-57" stroke="#000000" fill="#000000" x="20" y="65" width="4" height="27"></rect>
+                  <rect id="Rectangle-57-Copy" stroke="#000000" fill="#000000" x="94" y="65" width="4" height="27"></rect>
+              </g>
+          </g>
+        </svg>
+        
+      <a href="#" class="modal-close" id='clsbtn'></a>
 
-      <div class="header-title">
-        <h2>
-          Hi!
-       </h2>
-
-       <p>
-         
-       </p>
+    <div class="cd-modal-content" id="modal-content">
+        <ul class="mainnav" id="mainnav">
+          <a href="index.html" id="btnHome" ><li>HOME</li></a>
+          <a href="#services" id="btnServices"><li>About</li></a>
+          <a href="#work" id="navWork"><li>Projects</li></a>
+          <a href="#contact" id="btnContact"><li>Contact</li></a>
+        </ul>
+        <div class="contact-nav">
+          
+            <a target="_blank" href="https://codepen.io/mattshanker"><i class="fa fa-fw fa-codepen"></i>Codepen</a>
+          
+            <a target="_blank" href="https://github.com/mattshanker"><i class="fa fa-fw fa-github"></i>GitHub</a>
+          
+            <a target="_blank" href="https://twitter.com/mattshanker"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+          
       </div>
+        
+    </div>
+
+  </div>
+
+     
+      <a href="" id="motrig">
+        
+        <span class="tog"></span>
+        
+      </a>
+    <header class="header" id="header">
+     
+        <h1 class='header-title' id='htitle'>
+          title
+        </h1>   
+      
     </header>
 
-<!-- about me html -->
-
   <section class="about" id="about">
-    <div>
-    <h4>A little about me...</h4>
-    </div>    
+    
+    
   </section>
 
-<!-- end about me -->
+        <section class="services-section" id="services">
+          
+          <div class="services-content" href="#" id="scone">
+              
+              <span>
+                <i class='fa fa-2x fa-laptop'></i>
+                <i class='fa fa-3x fa-tablet'></i>
+                <i class='fa fa-4x fa-mobile'></i>
+              </span>
+            
+            <h2>Web Development</h2>
+              
+              <p>
+                Where the design becomes code.
+              </p>
 
-    <section class="services-section" id="services">
-        <div class="services-header">
-          <h3>Services</h3>
-        </div>
-  </section>
-      
-    <div class="services-section">
-      <div class="services-content" href="#" id="scone">
-        
-        <h3>Web Development</h3>
-          <p>Development is the implementation of design through code.</p>
+              <a href="" id='modalt1'>More Info</a>
+
+          </div>
+          
+
+        <div class="services-content" id="sctwo">
           <span>
-            <i class='fa fa-2x fa-laptop'></i>
-            <i class='fa fa-3x fa-tablet'></i>
-            <i class='fa fa-4x fa-mobile'></i>
+            <i class='fa fa-3x fa-map-signs'></i>
           </span>
-      </div>
-      
+          <h2>Inbound Marketing</h2>
+            <p>
+              Outbound marketing is sales and advertising, driving clients towards your business. Inbound is what happens when they get there.
+            </p>
+          
+            <a href="" id='modalt2'>More Info</a>
+        </div>
+        <div class="services-content">
+          
+            <a href="#" id="btnWork">WORK</a>
+          
+        </div>
 
-    <div class="services-content" id="sctwo">
-      <h3>Inbound Marketing</h3>
-        <p>Inbound marketing gives customers a clear path to their goals and reduces friction.</p>
-      
-      <span>
-        <i class='fa fa-3x fa-map-signs'></i>
-      </span>
-      
-    
-    
-    </div>
-    </div>
-
-
-<section class="dev-section" id='devel'>
-      <div class="services-header">
-          <h3>Web Dev</h3>
+        <div class="services-content">
+          <a href="#" id="btnServices">Services</a>
         </div>
     </section>
-    
-<div class="dev-section">
-  
+        
+      
+<section class="dev-section" id='devel'>
+
+  <h3>Web Dev</h3>
 
     <div class="dev-content">
         <h4>Responsive Web Design</h4>
             <p>
-               Media queries, adaptive content and grid layout let your site respond to fit any client's screen no matter whether it's desk or pocket size.
+               Media queries, adaptive content and grid layout let your site respond to fit any client's screen. No matter whether it's desk or pocket size, responsive design done right allows customers to interact with your content without having to pinch and zoom your desktop site. Don't let a broken mobile site take your business offline.
             </p>
             <div class="iconspan">
               <i class="fa fa-code fa-2x"></i>
             </div>
     </div>
 
-    <!-- As the internet has become something you carry with you instead of something you go to, websites have had to work hard to keep up. Mobile internet access is the main way many people get on the internet today and responsive web design has emerged to link the laptop/desktop past with the smartphone future. -->
-
     <div class="dev-content">
-    <h4>Performance impacts usability</h4>
-      <p>
-         As of April 2015, Google's search algorithm has already started penalizing websites that aren't optimized for mobile in results. But more important is the perception your users get if your site loads slowly or reacts unexpectedly on mobile: They'll think your site is broken and go somewhere else.
-      </p>
-            <div class="iconspan">
+    
+      <h4>Domains + hosting</h4>
+        
+        <p>      
+          Your prepurchased domain/hosting can be used to maintain continutity with current services.
+        </p>
+          
+          <p>
+            Or you can choose from various domain/hosting service options that I've compiled for you based on your project's requirements.
+          </p>
+            
+          <div class="iconspan">
             <i class="fa fa-2x fa-line-chart"></i>
-      <!--  One of the most important things for any website is speed. The speed that a page renders on a user's device depends on factors like network traffic but page size is the most controllable element of website speed, as perceived by your users.  -->
           </div>
+
     </div>
+    
     <div class="dev-content">
-      <h4>Maintenance:</h4>
-      <p>If your site isn't up to code, I'll take over where someone else left off and help you get back online. <a href="mailto:hireme@mattshanker.com">Contact me</a> for a no-charge cost and time estimate.</p>
+    <h4>Dynamic or static?</h4>
+      <p>
+        How does a site get it's content? Static sites are displayed using only HTML, CSS, and JavaScript. The content you see is coded directly into the files. Unlike dyanmic sites, which run server-side code such as PHP. Sites that run on WordPress or any other CMS, are referred to as dynamic. For anyone who doesn't need to change their content more than 1 or 2 times a month and would rather have a more secure and maintainable site, a static site is the best choice.
+      </p>
+
+    </div>
+    
+    <div class="dev-content">
+      
+      <h4>Maintenance</h4>
+      <p>
+        I'm not restricted to working with code that only I've worked on. I'll take over where someone else left off and help you get back online. <a href="mailto:hireme@mattshanker.com">Contact me</a> for a no-charge cost and time estimate.
+      </p>
+
       <div class="iconspan">
         <i class="fa fa-3x fa-wrench"></i>
       </div>
+
     </div>
 
-    <!-- <div class="dev-content">
-    <h4>UI/UX Design</h4>
-      <p>
-        Great UI/UX (User Interface/User Experience) design shows you're detail oriented and consciously thinking about your customers experience on the other side of the transaction. Make the right tools accessible to your customers and you can create new customers at any time of day.
-      </p>
-    </div> -->
+</section>
+
+<section class="inbound-section" id='inbound'>
+          
+  <div class="inbound-content">
+    <h2>Landing pages - your site's welcome mat</h2>
+    <h5> 
+      What happens after someone clicks on your ad? Or your email blast?
+    </h5>
+    <p>
+      Ever clicked on a company's ad or email and then get sent to a page that makes you feel lost or disoriented? That's where a good landing page can convert someone's interest into further action, like buying or subscribing. They should be tailored to the specific customer group they're targeting (Welcome to our site, readers of Pitbull Magazine!) and make someone feel at home.
+    </p>
   </div>
 
+  <div class="inbound-content">
+    <h4>Automation</h4>
+    <p>
+      Marketing automation gives your customers a better experience by being ready to assist them any time. As the owner, you can spend your time with qualified customers and your customers get timely answers to their questions. Email autoresponders, form submissions, and document uploads can all have attached automation that facilitates your customer's experience and your workflow.
+    </p>
+  </div>
 
-<!-- end webdev content -->
+  <div class="inbound-content">
+  <h4>Onboarding</h4>
+    <p>
+      Creating an on-boarding process for your business
+        <span class="bold">
+          gives your customers a better experience
+        </span>
+      and you back your time to focus on delivering the best product or service for your customers. If you go over the same issues with each new customer, onboarding is for you. 
+    </p>
+  </div>
 
-<!-- start inbound content -->
-
-  <section class="inbound-section">
-          
-        <div class="inbound-content">
-              <h4>Automation</h4>
-                <p>
-                  Marketing automation gives your customers a better experience by being ready to assist them any time. As the owner, you can spend your time with qualified customers and your customers get timely answers to their questions.
-        </div>
-
-        <div class="inbound-content">
-              <div class="iconspan">
-                  <ul>
-                    <li><i class='fa fa-3x fa-road'></i>fast shoppers</li>
-                    <li><i class='fa fa-3x fa-search'></i>browsers</li>
-                    <li><i class='fa fa-3x fa-users'></i>return customers</li>
-                  </ul>
-              </div>
-        </div>
-
-        <div class="inbound-content">
-                <h4>Onboarding</h4>
-                <p>
-                  Creating an on-boarding process for your business
-                  <span class="bold">
-                    gives your customers a better experience
-                  </span>
-                   and you back your time to focus on delivering the best product or service for your customers. If you go over the same issues with each new customer, onboarding is for you.
-                </p>
-            </div>
-    
-  </section>
+</section>
 
 <!-- end inbound content -->
 
 
 <!-- start work section -->
-  <div class="work-section-intro" id="work">
+
+<section class="work-section" id="work">
+    
+  <div class="work-section-intro">
     <h3><i class="fa fa-briefcase"></i>Work</h3>
   </div>
 
-  <section class="work-section">
-
-      <div class="work-content">
+    <div class="work-content">
       <h4>Sample project</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
       </p>
-      </div>
+    </div>
 
-      <div class="work-content">
-        <h4>Sample project</h4>
+    <div class="work-content">
+      <h4>Sample project</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         </p>
-      </div>
+    </div>
 
-      <div class="work-content">
-        <h4>Sample project</h4>
+    <div class="work-content">
+      <h4>Sample project</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing 
         </p>
-      </div>
+    </div>
 
-      <div class="work-content">
-        <h4>Sample project</h4>
+    <div class="work-content">
+      <h4>Sample project</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
         </p>
-      </div>
-
-    </section>
-
-<section class="contact" id="contact">  
-  <p>
-  <a href="mailto:hireme@mattshanker.com">hireme@mattshanker.com  <i class="fa fa-envelope"></i></a>
-  </p>
+    </div>
 </section>
+
 
 <!-- end work section -->
 
-<footer class="footer-content">
-    <p>Matt Shanker 2015</p>
-    <ul>
-      <li><a target="_blank" href="https://codepen.io/mattshanker"><i class="fa fa-fw fa-codepen"></i>CodePen</a></li>
-      <li><a target="_blank" href="https://github.com/mattshanker"><i class="fa fa-fw fa-github"></i>Github</a></li>
-      <li><a target="_blank" href="https://twitter.com/mattshanker"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
-    </ul>  
+<footer id="foot" class="footer">
+    
+    <div>
+      <a href="mailto:hireme@mattshanker.com">hireme@mattshanker.com<i class="fa fa-envelope"></i></a>
+      <p class="footerp" id="contact">Matt Shanker 2015</p>
+    </div>
+    
+
+
 </footer> 
 
 
@@ -262,15 +344,13 @@
 
 <!-- end page wrap -->
   <!-- </div> -->
-  </div>
-  </div>
-  </div>
-  </div>
-  <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
-  <script src="node_modules/waypoints/lib/shortcuts/inview.min.js"></script>
-
   
-  <script src="js/main.js"></script>
+  <script type="text/javascript" src="../node_modules/gsap/src/minified/TimelineMax.min.js"></script>
+  <script type="text/javascript" src="../node_modules/gsap/src/minified/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../node_modules/gsap/src/minified/easing/EasePack.min.js"></script>
+  
+  
+  <script type="text/javascript" src="../js/main.js"></script>
 
     <!-- GA code -->
     <script>

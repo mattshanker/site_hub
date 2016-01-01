@@ -27,10 +27,11 @@ gulp.task('serve', function() {
     bsync.init({
         server: {
             baseDir: "./",
+            notify: false,
             //browser: "google chrome, firefox, Safari",
-            //notify: false
             injectChanges: true
   }
+
 });
     gulp.watch(["./*.html", "./css/*.css", "./css/*.scss", "./js/*.js"]).on('change', bsync.reload);
 });
