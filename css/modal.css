@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Patterns - reusable parts of our design
 
@@ -45,7 +45,7 @@ Patterns - reusable parts of our design
   color: #f2f2f2;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Main Content
 
@@ -73,7 +73,7 @@ Main Content
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modal Window
 
@@ -109,7 +109,7 @@ Modal Window
 }
 .cd-modal svg > path {
   fill: #1f4c74;
-  
+
 }
 .cd-modal .modal-close {
   /* 'X' icon */
@@ -120,7 +120,7 @@ Modal Window
   right: 0;
   margin: 10px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3) url('../img/cd-icon-close.svg') no-repeat center center;
+  background: rgba(227, 227, 227, 0.3); /*url('../../img/cd-icon-close.svg') no-repeat center center;*/
   /* image replacement */
   /*overflow: hidden;*/
   text-indent: 100%;
@@ -153,6 +153,7 @@ Modal Window
 }
 .cd-modal.modal-is-visible .modal-close {
   visibility: visible;
+  color: #3b486c;
   opacity: 1;
   transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
   transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
@@ -178,12 +179,12 @@ Modal Window
   transition: opacity 0.3s 0s, transform 0.3s 0s;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
 }
 .cd-modal-content a {
   color: #f2f2f2;
-  
-  
+
+
 }
 .modal-is-visible.cd-modal-content {
   display: -webkit-flex;
@@ -213,7 +214,7 @@ Modal Window
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
  Cover Layer - hide main content when modal is fired
 
