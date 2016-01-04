@@ -2,3 +2,6 @@ img/
 *.jpg
 *.png
 *.svg
+.DS_Store
+node_modules/
+*.log
