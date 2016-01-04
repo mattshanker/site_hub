@@ -1,0 +1,237 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #1f4c74;
+  background-color: #f2f2f2;
+}
+
+a {
+  color: #dab433;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Patterns - reusable parts of our design
+
+-------------------------------- */
+.cd-btn {
+  display: inline-block;
+  margin: .4em;
+  color: #e2e2e2;
+  border: 2px solid #e2e2e2;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  right: 0;
+  position: fixed;
+  z-index: 99999;
+}
+.no-touch .cd-btn:hover {
+  background-color: #dab433;
+  color: #f2f2f2;
+}
+
+/* -------------------------------- 
+
+Main Content
+
+-------------------------------- */
+.cd-main-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+}
+.cd-main-content .center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.cd-main-content h1 {
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .cd-main-content h1 {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+}
+
+/* -------------------------------- 
+
+Modal Window
+
+-------------------------------- */
+.cd-modal {
+  position: fixed;
+  z-index: 20000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  background-color: #ccddee;
+  opacity: 0;
+  /*overflow: auto;*/
+  visibility: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+}
+.cd-modal svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  justify-content:center;
+}
+.cd-modal svg > path {
+  fill: #1f4c74;
+  
+}
+.cd-modal .modal-close {
+  /* 'X' icon */
+  position: absolute;
+  z-index: 10000;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  margin: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3) url('../img/cd-icon-close.svg') no-repeat center center;
+  /* image replacement */
+  /*overflow: hidden;*/
+  text-indent: 100%;
+  white-space: nowrap;
+  /* Force hardware acceleration*/
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+}
+.no-touch .cd-modal .modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cd-modal.modal-is-visible {
+  visibility: visible;
+  transition: all 0.3s 0.3s;
+  opacity: 1;
+  -webkit-transform: translateY(-100);
+  -moz-transform: translateY(-100);
+  -ms-transform: translateY(-100);
+  -o-transform: translateY(-100);
+  transform: translateY(-100);
+
+}
+.cd-modal.modal-is-visible .modal-close {
+  visibility: visible;
+  opacity: 1;
+  transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+
+}
+
+.cd-modal-content {
+  position: relative;
+  height: 100%;
+  z-index: 200;
+  /*opacity: 0;*/
+  visibility: hidden;
+  width: 100%;
+  display: none;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: opacity 0.3s 0s, -webkit-transform 0.3s 0s;
+  transition: opacity 0.3s 0s, transform 0.3s 0s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+.cd-modal-content a {
+  color: #f2f2f2;
+  
+  
+}
+.modal-is-visible.cd-modal-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  -webkit-align-content:center;
+  -ms-flex-line-pack:center;
+  align-content:center;
+  /*opacity: 1;*/
+  margin-top: 6em;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: opacity 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  -moz-transition: opacity 0.3s 0.3s, -moz-transform 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
+  visibility: visible;
+  overflow: scroll;
+}
+@media only screen and (min-width: 768px) {
+  .cd-modal-content {
+    padding: 3em 10% 4em;
+  }
+  .cd-modal-content p {
+    font-size: 2.4rem;
+  }
+}
+
+/* -------------------------------- 
+
+ Cover Layer - hide main content when modal is fired
+
+-------------------------------- */
+.cd-cover-layer {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(90, 152, 173, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s 0.3s, visibility 0s 0.6s;
+}
+.cd-cover-layer.modal-is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
