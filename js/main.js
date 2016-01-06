@@ -10,7 +10,7 @@
  * http://www.codrops.com
  */
 
-		var mo = document.getElementById("modal"),
+  var mo = document.getElementById("modal"),
 			co = document.getElementById("modal-content"),
 			c = document.getElementById('clsbtn'),
 			h = document.getElementById('header'),
@@ -31,16 +31,29 @@
 			inbp = sct.getElementsByTagName('p'),
 			h = document.getElementById('htitle');
 
-	function clmo () {
+function clmo () {
 		tl.to([mo, co, h, mot], 0.5, {css: {className:"-=modal-is-visible"}});
 	}
 
-	function wid () {
+function wid () {
 		var cssw = window.innerWidth;
 
 			h.innerHTML = cssw;
 	}
 
+	document.addEventListener("DOMContentLoaded", function () {
+		tl.to(ser, 0.3, {css: {display: "none"}});
+		console.log('services hidden');
+	}, false);
+
+	se.onclick = function (e) {
+  e.preventDefault();
+		tl.to(ser, 0.3, {css:{display:"block"}});
+		console.log('services!');
+	};
+
+
+	//se.addEventListener('click', showSer, false);
 
 	mot.addEventListener('click', showModal, false);
 

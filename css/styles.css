@@ -80,26 +80,26 @@ h5,h6{
 		width:100%;
 
 }
+
 @media only screen and (max-width: 500px){
 	.content-wrap{
 		width: 100%;
 		height: auto;
-		display: block;
 	}
 }
+
 a{
-	color:darkcyan;
+	color: slategray;
 	cursor: pointer;
 	text-decoration:none;
 	text-align: center;
 }
-.shadow{
 
+.shadow{
 	text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.45);
 }
 
 .bold{
-
 	font-weight: bold;
 }
 *,
@@ -178,20 +178,20 @@ h4{
 		font-size: 1.5em;
 		}
 	p{
-		font-size: 1.2em;
+		line-height: 1.8;
 	}
+
 }
 /*header styles*/
-
-
 	.header{
 		height: 100%;
 		width: 100%;
+		top: 0;
+		position: fixed;
 	}
 
 	.header-title{
-		position: fixed;
-		background-color: rgb(121, 136, 121);
+		background-color: rgb(120, 120, 120);
 		color: #E6E8E6;
 		height: auto;
 		width: 100%;
@@ -229,8 +229,6 @@ h4{
 		flex-direction:column;
 
 	}
-
-
 	.active {
 		background-color: slategray;
 		border-bottom: 2px solid #ffffff;
@@ -246,14 +244,10 @@ h4{
 			width: 100%;
 
 		}
-		.header-bg{
-
-		}
 		.header-title{
 			color: #3F403F;
 			position: relative;
 			z-index: 500;
-			color: #E6E8E6;
 		}
 		.menubutton{
 			position: fixed;
@@ -297,17 +291,15 @@ h4{
 			-webkit-align-items:center;
 			-ms-flex-align:center;
 			align-items:center;
+			top: 0;
 		}
 		.header-title{
-			color: #3F403F;
+			color: rgb(247, 247, 247);
 			text-shadow: 1px 2px 2px #a2a2a2;
-			position: relative;
 			z-index: 150;
 			margin: 0 auto;
 			text-align: center;
-
 		}
-
 		.mainnav{
 			width: 100%;
 			height: auto;
@@ -318,7 +310,6 @@ h4{
 			-ms-flex-align:center;
 			align-items:center;
 			margin-top: 3em;
-
 		}
 		.mainnav a{
 			width: 90%;
@@ -416,16 +407,11 @@ h4{
 /*about section*/
 .about{
 	width: 100%;
-	height: 70vh;
+	height: 30vh;
 	background-color: #ededed;
 	padding-top: 6em;
 }
-.about svg{
-	left: 6em;
-	top:4em;
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-}
+
 
 /*end about section*/
 
@@ -482,7 +468,6 @@ h4{
 	z-index: 400;
 	color: #3F403F;
 	padding-top: 1em;
-	/*padding-bottom: 6em;*/
 }
 
 
@@ -496,10 +481,8 @@ h4{
 		position: relative;
 		z-index: 30;
 		padding-top: 2em;
-
 	}
 	.services-content{
-
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -566,7 +549,6 @@ h4{
 	}
 	.services-content a{
 		text-transform: uppercase;
-		border: 2px solid #E6E8E6;
 		padding: .5em;
 		margin-right: auto;
 		margin-left: auto;
@@ -770,7 +752,6 @@ h4{
 	position: relative;
 	width:100%;
 	height:100%;
-	background-color: #9FB8AD;
 	color: #3F403F;
 	margin: 0 auto;
 	padding: 0;
@@ -801,6 +782,10 @@ h4{
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
+.inbound-content h4{
+	background-color: #acd6c4;
+	text-align: center;
+}
 .inbound-content p{
 	max-width: 300px;
 }
@@ -816,7 +801,7 @@ h4{
 		display: block;
 		padding-bottom: 2em;
 		padding-top: 1em;
-		background-color: #66CC66;
+
 	}
 	.inbound-header{
 		z-index: 700;
@@ -880,14 +865,13 @@ h4{
 
 	}
 	.inbound-section{
-		/*top: -100px;*/
+
 		z-index: 5000;
 		position: relative;
 		width:100%;
 		display: none;
 		height:auto;
 		padding: 1em 0;
-
 		background-color: #9FB8AD;
 		color: #3F403F;
 	}
@@ -896,7 +880,8 @@ h4{
 		position: relative;
 		height: auto;
 		margin-right: auto;
-		margin-left: auto;
+		margin-left: 10px;
+		width: 280px;
 	}
 	.inbound-content p{
 		padding: 4em 1em;
@@ -1140,43 +1125,6 @@ input, label, textarea{
 	text-align: center;
 }
 
-input[type=text], input[type=url], input[type=email]{
-	width:300px;
-	margin-bottom:20px;
-	padding: 0;
-	margin-left: 10px;
-	text-align: center;
-	border:4px solid #3F403F;
-	font-size: 24px;
-	}
-.namediv{
-		margin-top:50px;
-	}
-textarea{
-		margin-left: 10px;
-		margin-right: 10px;
-		height:250px;
-		width:300px;
-		resize:none;
-		border: 4px solid #3F403F;
-		font-size: 24px;
-		background-color:#ffffff;
-		font-family: 'Lato', sans-serif;
-	}
-.formbuttons{  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
- 	display: -ms-flexbox;  /* TWEENER - IE 10 */
- 	display: -webkit-flex;
-	display: flex;
-	text-align: center;
-	height: auto;
-	width: 100%;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
 #reset{
 	height: 30px;
 	width: auto;
@@ -1277,53 +1225,7 @@ input[type=text], input[type=url], input[type=email]{
 	}
 }
 
-/*end 1000px media query*/
-form{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 600px;
-}
 
-.contactspan{  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
- 	display: -ms-flexbox;  /* TWEENER - IE 10 */
- 	display: -webkit-flex;
-	display: flex;
-	text-align: center;
-	padding-bottom: 50px;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	width: 300px;
-	height:auto;
-}
-
-input[type=text]:focus,
-input[type=url]:focus{
-	border:4px solid black;
-	transition:all .3s ease-in-out;
-	text-align: left;
-
-}
-
-
-label{
-	color:black;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.formbuttons{  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
- 	display: -ms-flexbox;  /* TWEENER - IE 10 */
- 	display: -webkit-flex;
-	display: flex;
-	-webkit-justify-content:center;
-	-ms-flex-pack:center;
-	justify-content:center;
-	-webkit-align-items:center;
-	-ms-flex-align:center;
-	align-items:center;
-	margin-bottom:40px;
-}
 button{
 	margin-left: 20px;
 	background-color: lightgray;
@@ -1354,13 +1256,10 @@ button{
 	align-items:flex-end;
 
 }
-
 .footer a{
 	padding: .5em;
 	border: 2px solid #ccddee;
 }
-
-
 .footer ul li{
 	margin: 2em 0;
 }
@@ -1377,10 +1276,8 @@ button{
 	background-color: #3F403F;
 	margin-left: auto;
 	margin-right: auto;
-
 }
-
-footer div{
+footer{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -1389,31 +1286,22 @@ footer div{
 	flex-direction:column;
 	-webkit-align-items:flex-end;
 	-ms-flex-align:end;
-	align-items:center;
+	align-items:end;
 	-webkit-flex-grow:5;
 	-ms-flex-positive:5;
 	flex-grow:5;
 	width: 100%;
 	height: 100%;
 }
-
 footer a{
-	margin:2em 0;
-	-ms-flex-item-align:center;
+	margin-top: 2em;
+	/*-ms-flex-item-align:center;
 	-webkit-align-self:center;
-	align-self:center;
-
+	align-self:center;*/
+  padding: .5em;
 }
-
-footer div a i{
-	padding-left: .25em;
-}
-
-footer div p{
+footer p{
 	margin-right: 0;
-	-webkit-justify-content:flex-end;
-	-ms-flex-pack:end;
-	justify-content:flex-end;
-
+	align-self: flex-end;
 }
 }

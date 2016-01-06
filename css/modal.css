@@ -7,21 +7,8 @@ Primary style
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
 
-body {
-  font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
-  color: #1f4c74;
-  background-color: #f2f2f2;
-}
 
-a {
-  color: #dab433;
-  text-decoration: none;
-}
 
 /* --------------------------------
 
