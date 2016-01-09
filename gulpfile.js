@@ -1,7 +1,7 @@
 var gulp           = require('gulp');
 var bsync          = require('browser-sync').create();
 var autoprefixer   = require('gulp-autoprefixer');
-var sass           = require('gulp-sass');
+//var sass           = require('gulp-sass');
 //var concat       = require('gulp-');concat js
 // build task
 //todo
@@ -38,8 +38,8 @@ gulp.task('serve', function() {
 //concat/min/gzip html/css/js
 
 //compile scss
-gulp.task('sass', function () {
-  gulp.src('./css/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-});
+//gulp.task('sass', function () {
+  //gulp.src('./css/*.scss')
+    //.pipe(sass().on('error', sass.logError))
+    //.pipe(gulp.dest('./css'));
+//});

@@ -76,7 +76,7 @@ function wid () {
  			tl.to([inbp, inbs, wos], 0.3, {css: {display: "none"}});
  			tl.to([devs, devp], 0.5, {css: {display: "block", top:"-100"}, ease:Power1.easeOut});
  		h.innerHTML = 'web dev';
-
+               console.log("dev clicked");
  	};
 
  	inb.onclick = function (e) {
