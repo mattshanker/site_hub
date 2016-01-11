@@ -15,6 +15,7 @@
 			c = document.getElementById('clsbtn'),
 			h = document.getElementById('header'),
 			tl = new TimelineMax(),
+      abo = document.getElementById("about"),
 			mot = document.getElementById('motrig'),
 			dev = document.getElementById('modalt1'),
 			inb = document.getElementById('modalt2'),
@@ -48,7 +49,8 @@ function wid () {
 
 	se.onclick = function (e) {
   e.preventDefault();
-		tl.to(ser, 0.3, {css:{display:"block"}});
+  tl.to([inbp, inbs, wos, abo], 0.3, {css: {display: "none", top:"100"}});
+		tl.to(ser, 0.3, {css:{display:"block", top:"-100"}});
 		console.log('services!');
 	};
 
@@ -73,9 +75,9 @@ function wid () {
  	dev.onclick = function (e) {
 
  		e.preventDefault();
- 			tl.to([inbp, inbs, wos], 0.3, {css: {display: "none"}});
+ 			tl.to([inbp, inbs, wos], 0.3, {css: {display: "none", top:"100"}});
  			tl.to([devs, devp], 0.5, {css: {display: "block", top:"-100"}, ease:Power1.easeOut});
- 		h.innerHTML = 'web dev';
+ 		h.innerText = 'web dev';
                console.log("dev clicked");
  	};
 
@@ -88,7 +90,7 @@ function wid () {
 
  	wo.onclick = function (e) {
  		e.preventDefault();
- 			tl.to([devp, inbp, devs, inbs], 0.3, {css:{display:"none", top: "100"}});
+ 			tl.to([devp, inbp, devs, inbs, ser], 0.3, {css:{display:"none", top: "100"}});
  			tl.to(wos, 0.3, {css:{display:"block", top: "-100"}});
  		h.innerHTML = 'work';
  	};
