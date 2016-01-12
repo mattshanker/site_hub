@@ -57,14 +57,14 @@
       </g>
       </svg></a>
 
-    <div class="cd-modal-content" id="modal-content">
+    <nav class="cd-modal-content" id="modal-content">
         <ul class="mainnav" id="mainnav">
           <a href="index.html" id="btnHome" ><li>HOME</li></a>
           <a href="#services" id="btnServ"><li>About</li></a>
           <a href="#work" id="navWork"><li>Projects</li></a>
           <a href="#contact" id="btnCont"><li>Contact</li></a>
         </ul>
-        <div class="contact-nav">
+        <section class="contact-nav">
 
             <a target="_blank" href="https://codepen.io/mattshanker"><i class="fa fa-fw fa-codepen"></i>Codepen</a>
 
@@ -72,9 +72,9 @@
 
             <a target="_blank" href="https://twitter.com/mattshanker"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
 
-      </div>
+      </section>
 
-    </div>
+    </nav>
 
   </div>
 
@@ -92,10 +92,10 @@
 
     </header>
 
-  <section class="" id="about">
+  <section class="about" id="about">
     <h2>ABOUT</h2>
     <p>
-      freelance web dev / mktg
+      freelance web dev
     </p>
     <p>
       also enjoy concerts, soccer and beer
@@ -103,37 +103,32 @@
   </section>
 
 <section>
-
-    <div class="services-content">
+    <button class="services-content">
       <a href="#" id="btnAbout">About</a>
-    </div>
-    <div class="services-content">
+    </button>
+    <button class="services-content">
       <a href="#" id="btnServices">Services</a>
-    </div>
-    <div class="services-content">
+    </button>
+    <button class="services-content">
       <a href="#" id="btnWork">Work</a>
-    </div>
+    </button>
 </section>
 
   <section class="services-section" id="services">
-    <div class="services-content" href="#" id="scone">
-
-        <span>
-          <i class='fa fa-2x fa-laptop'></i>
-          <i class='fa fa-3x fa-tablet'></i>
-          <i class='fa fa-4x fa-mobile'></i>
-        </span>
-
+    <article class="services-content" href="#" >
+      <span>
+        <i class='fa fa-2x fa-laptop'></i>
+        <i class='fa fa-3x fa-tablet'></i>
+        <i class='fa fa-4x fa-mobile'></i>
+      </span>
     <h2>Web Development</h2>
-      <h3>
+      <h3 id="scone">
         coding your custom website
       </h3>
-
       <a href="#srvcs" id='modalt1'>More Info</a>
+    </article>
 
-    </div>
-
-    <div class="services-content" id="sctwo">
+    <article class="services-content" id="sctwo">
     <span>
       <i class='fa fa-3x fa-map-signs'></i>
     </span>
@@ -142,51 +137,42 @@
           Outbound marketing: sales and advertising driving clients towards your business. What happens when they get there?
         </p>
         <a href="" id='modalt2'>More Info</a>
-  </div>
+  </article>
 </section>
 
 <section class="dev-section" id='devel'>
-
   <h3>Web Dev</h3>
-
-    <div class="dev-content">
+    <article class="dev-content">
         <h4>Responsive Web Design</h4>
             <p>
                Media queries, adaptive content and grid layout allow your site to respond to fit any client's screen. Now customers don't have have to pinch and zoom your desktop site. Get the feel of an app without the app store.
             </p>
-            <div class="iconspan">
+            <span class="iconspan">
               <i class="fa fa-code fa-2x"></i>
-            </div>
-    </div>
+            </span>
+    </article>
 
-
-    <div class="dev-content">
-
+    <article class="dev-content">
         <h4>Dynamic vs Static</h4>
         <p>
            Dyanmic sites use a content management system, like WordPress, to generate and keep track of content on your site. Your site starts as HTML, CSS, and JS files, and gradually grows as more content is created. Static sites are built and served using only HTML, CSS, and JavaScript files. Content updates to these site come from making changes to these files directly. If you don't need to change you content more than 1 or 2 times a month and would rather have a more secure and maintainable site, a static site is the best value.
         </p>
+    </article>
 
-    </div>
-
-    <div class="dev-content">
-
+    <article class="dev-content">
       <h4>Maintenance</h4>
       <p>
         I'm not restricted to working with code that only I've written. I'll take over where someone else left off and help you get back online. <a href="mailto:hireme@mattshanker.com">Contact me</a> for a no-charge cost and time estimate.
       </p>
-
-      <div class="iconspan">
+      <span class="iconspan">
         <i class="fa fa-3x fa-wrench"></i>
-      </div>
-
-    </div>
+      </span>
+    </article>
 
 </section>
 
 <section class="inbound-section" id='inbound'>
-
-  <div class="inbound-content">
+  <article class="inbound-content">
     <h2>Landing pages - your site's welcome mat</h2>
     <h5>
       What happens after someone clicks on your ad? Or your email blast?
@@ -194,21 +180,21 @@
     <p>
       Ever clicked on a company's ad or email and then get sent to a page that makes you feel lost or disoriented? That's where a good landing page can convert someone's interest into further action, like buying or subscribing. They should be tailored to the specific customer group they're targeting (Welcome to our site, readers of Pitbull Magazine!) and make someone feel at home.
     </p>
-  </div>
+  </article>
 
-  <div class="inbound-content">
+  <article class="inbound-content">
     <h4>Onboarding + Automation</h4>
     <p>
       As the owner, you can spend your time with qualified customers and your customers get timely answers to their questions. Email autoresponders, form submissions, and document uploads can all have attached automation that facilitates your customer's experience and your workflow. Creating an on-boarding process for your business gives you back your time to focus on delivering the best product or service for your customers.
     </p>
-  </div>
+  </article>
 
-  <div class="inbound-content">
+  <article class="inbound-content">
     <h4>Data driven marketing</h4>
     <p>
       Tools like Google Analytics are indispensible for making decisions about your website but it can be difficult to make sense of the data. By looking at the number of visits, users, pages per visit, bounce rate, and other metrics, it's easier to see where the problem is. Do you know your site's bounce rate?
     </p>
-  </div>
+  </article>
 
 </section>
 
@@ -266,9 +252,7 @@
 <!-- end page wrap -->
 
 
-  <script type="text/javascript" src="js/TimelineMax.min.js"></script>
-  <script type="text/javascript" src="js/TweenMax.min.js"></script>
-  <script type="text/javascript" src="js/EasePack.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
     <!-- GA code -->

@@ -797,38 +797,34 @@ h4{
 @media only screen and (max-width: 480px){
 
 	.inbound-section:before{
-			content: '';
-  			position: absolute;
-  			left: 0;
-  			top: -32px;
-  			/*top: 0;*/
-  			width: 100%;
-  			right: 0;
-  			height: 12em;
-  			background: inherit;
-  			-webkit-transform: skewY(-15deg);
-
-			transform: skewY(15deg) translateY(-10px);
-			z-index: 10;
+		content: '';
+  	position: absolute;
+  	left: 0;
+  	top: -32px;
+  	/*top: 0;*/
+  	width: 100%;
+  	right: 0;
+  	height: 12em;
+  	background: inherit;
+  	-webkit-transform: skewY(-15deg);
+		transform: skewY(15deg) translateY(-10px);
+		z-index: 10;
 	}
 	.inbound-section:after{
-			content: '';
-  			position: absolute;
-  			left: 0;
-  			top: -32px;
-  			/*margin-bottom: 10px;*/
-  			width: 100%;
-  			right: 0;
-  			height: 12em;
-  			background: inherit;
-  			-webkit-transform: skewY(-15deg);
-
-  			transform: skewY(-15deg) translateY(-10px);
-			z-index: 10;
-
+		content: '';
+  	position: absolute;
+  	left: 0;
+  	top: -32px;
+  	/*margin-bottom: 10px;*/
+  	width: 100%;
+  	right: 0;
+  	height: 12em;
+  	background: inherit;
+  	-webkit-transform: skewY(-15deg);
+  	transform: skewY(-15deg) translateY(-10px);
+		z-index: 10;
 	}
 	.inbound-section{
-
 		z-index: 5000;
 		position: relative;
 		width:100%;
