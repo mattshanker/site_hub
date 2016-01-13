@@ -21,7 +21,7 @@ $("#modalt1").click(function (e) {
       display: "none",
    });
     $("#devel").velocity({
-      top:"-100"
+      top:"-90"
     },{
       duration: 500,
       display: "block",
@@ -53,22 +53,14 @@ $("#modalt1").click(function (e) {
     console.log('display is block')
   }
     $("#inbound").velocity({
-      top: "-100"
+      top: "-90"
     },{
       duration: 500,
       display: "block",
       easing: "easeInOut",
       complete: console.log('inbound section triggered')
     });
- 			$("#scone").velocity({
-        opacity: "0",
-        top: "100"
-      },{
-        duration: 300,
-        display:"none",
-        complete:function() {console.log('dev section is gone!')}
-      }
-    );
+
     $(h).velocity({
       backgroundColor:"#9FB8AD"
     },{
