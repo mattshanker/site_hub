@@ -5,7 +5,12 @@ var h = $('#header');
 
 $(window).load(function (){
   $('#work').toggleClass('hide');
+  $("#services").toggleClass('hide');
+  $("#inbound").toggleClass('hide');
   console.log('work section hidden')
+});
+$("#btnServices").click(function(){
+  $('#services').toggleClass('hide');
 });
 $('#btnWork').click(function (e){
   e.preventDefault();
