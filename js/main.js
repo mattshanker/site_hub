@@ -7,7 +7,8 @@ $(window).load(function (){
   $('#work').toggleClass('hide');
   $("#services").toggleClass('hide');
   $("#inbound").toggleClass('hide');
-  console.log('work section hidden')
+  console.log('work section hidden');
+  
 });
 $("#btnServices").click(function(){
   $('#services').toggleClass('hide');
@@ -54,7 +55,7 @@ $("#modalt1").click(function (e) {
         });
     console.log('display is none')
   } else{
-    $('#devel').toggleClass('hide');
+    $('#devel').fadeToggle('hide');
     console.log('display is block')
   }
     $("#inbound").velocity({
