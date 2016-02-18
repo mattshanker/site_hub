@@ -276,6 +276,9 @@ h4{
 	position: relative;
 	z-index: 5;
 }
+.a-content{
+  
+}
 /*end about section*/
 
 .srvcs{
@@ -437,7 +440,7 @@ h4{
 	width: auto;
 	text-align: center;
 }
-.content-inb{
+.content{
   max-width: 400px;
 }
 @media only screen and (max-width: 480px){
@@ -661,8 +664,8 @@ h4{
 .fnav a {
 	border-radius: 100%;
 	border: 2px solid white;
-	width: 80px;
-	height: 80px;
+	width:3em;
+	height:3em;
 	margin: 0 .5em;
 	display: inline-block;
 }

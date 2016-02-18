@@ -10,6 +10,9 @@ $(window).load(function (){
   console.log('work section hidden');
   
 });
+$("#btnAbout").click(function(){
+ $("#about").toggleClass('hide');
+});
 $("#btnServices").click(function(){
   $('#services').toggleClass('hide');
 });
