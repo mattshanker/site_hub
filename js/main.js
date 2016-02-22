@@ -6,18 +6,29 @@ var h = $('#header');
 $(window).load(function (){
   $('#work').toggleClass('hide');
   $("#services").toggleClass('hide');
+  $("#about").toggleClass('hide');
   $("#inbound").toggleClass('hide');
   console.log('work section hidden');
   
 });
+$("#toggle").click(function(){
+  $("#nav").toggleClass('hide');
+});
+
 $("#btnAbout").click(function(){
  $("#about").toggleClass('hide');
+  $("#nav").toggleClass('hide');
 });
+ 
 $("#btnServices").click(function(){
   $('#services').toggleClass('hide');
+
+  $("#nav").toggleClass('hide');
 });
 $('#btnWork').click(function (e){
   e.preventDefault();
+  $("#nav").toggleClass('hide');
+
   $('#work').toggleClass('hide');
   console.log('show work');
 });
