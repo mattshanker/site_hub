@@ -28,7 +28,7 @@ gulp.task('serve', function() {
         server: {
             baseDir: "./",
             notify: false,
-            browsers: ["google chrome", "firefox", "Safari"],
+            browsers: ["firefox"],
             injectChanges: true
   }
 
