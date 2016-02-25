@@ -7,6 +7,7 @@ $(window).load(function (){
   $('#work').toggleClass('hide');
   $("#services").toggleClass('hide');
   $("#about").toggleClass('hide');
+  $("#devel").toggleClass('hide');
   $("#inbound").toggleClass('hide');
   console.log('work section hidden');
   
@@ -25,6 +26,7 @@ $("#btnServices").click(function(){
 
   $("#nav").toggleClass('hide');
 });
+
 $('#btnWork').click(function (e){
   e.preventDefault();
   $("#nav").toggleClass('hide');
@@ -34,7 +36,7 @@ $('#btnWork').click(function (e){
 });
 
 $("#modalt1").click(function (e) {
- 		e.preventDefault();
+	e.preventDefault();
     $('#inbound').velocity({
       top:"100"
    },{
