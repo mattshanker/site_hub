@@ -36,7 +36,6 @@ body {
 	line-height: 1.5;
 	position: relative;
 	z-index: 9;
-	height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -197,23 +196,6 @@ h4{
   z-index: 80000;
 }
 
-.nav{
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  z-index: 500;
-  display: flex;
-  position: fixed;
-}
-
-.nav a{
-  text-transform: uppercase;
-  /*border: 2px solid #3F403F;*/
-  letter-spacing: 2px;
-  padding: 1em 2em;
-
-}
-
 
 @media only screen and (max-width:650px){
 .header{
@@ -254,31 +236,25 @@ h4{
   height: auto;
 }
 
+}
+
 .nav{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   position: relative;
   z-index: 5;
-  height: 100vh;
+  height: 60vh;
   flex-direction: column;
-  margin-bottom: 8em;
 }
 
 .nav a{
   padding: 1em 1.5em;
-  margin-top: 7px;
-  width: 180px;
+  margin-top: 2em;
   align-self: center;
-  background-color: rgb(188, 198, 209);
-  -webkit-box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
 }
 
-
-}
 #toggle{
   position:fixed;
   height:auto;
@@ -646,33 +622,38 @@ section{
 }
 /*end work style*/
 .footer{
-	width: 100%;
-	height: 25vh;
-	color: #E6E8E6;
-	position: fixed;
-	bottom: 0;
-	z-index: 2;
-	background-color:rgba(34, 34, 34, 0.76);
-	display:flex;
-	-webkit-align-items:flex-end;
-	-ms-flex-align:end;
+  width: 100%;
+  height: 25vh;
+  color: #E6E8E6;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  background-color:rgba(34, 34, 34, 0.76);
+  display:flex;
+  -webkit-align-items:flex-end;
+  -ms-flex-align:end;
   flex-direction: row;
 }
 
 
 .fnav{
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .fnav a {
-	border-radius: 100%;
-	border: 2px solid white;
-	width:3em;
-	height:3em;
-	margin: 0 .5em;
-	display: inline-block;
+  border-radius: 100%;
+  border: 2px solid white;
+  width:3em;
+  height:3em;
+  margin: 0 .5em;
+  display: inline-block;
+  background-color: rgb(188, 198, 209);
+  -webkit-box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
+
 }
 
 .fnav a:hover{
