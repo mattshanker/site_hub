@@ -4,7 +4,7 @@ var ht = $('#htitle');
 var h = $('#header');
 
 $(window).load(function (){
-  $('#nav').toggleClass('hide');
+  $('#nav').addClass('hide');
   
 });
 
