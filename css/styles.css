@@ -162,11 +162,13 @@ p{
 header{
   width: 100%;
   height:auto;
-  z-index: 10;
+  z-index: 2;
   position: fixed;
 }
 
 video{
+  position:relative;
+  z-index:5;
   height:auto;
   width:auto;
 }
@@ -322,10 +324,15 @@ video {
   -ms-flex-direction: row;
   flex-direction: row;
   color: #3F403F;
+  background-size: contain;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-position: bottom; 
+  background-image: url("../img/before.jpg");
   justify-content: center;
 }
 
-.intro{
+.dev-intro{
   width: auto;
   height: auto;
   position: relative;
@@ -334,10 +341,6 @@ video {
   text-align: center;
 }
 
-{
-  background-size: cover;
-  background-image: url("../img/before.jpg") no-repeat center center;
-}
 .dev{
   z-index: 4;
   position: relative;
@@ -391,14 +394,14 @@ section:last-of-type{
 }
 }
 
-.inbound{
+.intro-inb{
   z-index: 6;
   position: relative;
   width:100%;
   height:auto;
   color: #2e2e2e;
   margin: 0 auto;
-  padding: 0;
+  padding: 1em 2em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -413,6 +416,11 @@ section:last-of-type{
   align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
+  background-size: contain;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-position: bottom; 
+  background-image: url("../img/table.jpg");
   flex-wrap: wrap;
 }
 
