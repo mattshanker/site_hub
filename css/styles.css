@@ -304,6 +304,8 @@ video {
 /*end about section*/
 
 .srvcs{
+  background-size: cover;
+  background-image: url("../img/before.jpg") no-repeat center center;
   height: 80vh;
   width: 100%;
   position: relative;
