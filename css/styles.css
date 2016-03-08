@@ -197,7 +197,7 @@ video {
 .nav{
   width: 100%;
   position: fixed;
-  z-index: 3;
+  z-index: 9;
   height: 100%;
   background-image:url(../img/groovepaper.png);
 }
@@ -333,6 +333,13 @@ video {
   text-align: center;
 }
 
+.intro h2, .intro p{
+  color: #f7f7f7;
+  height: auto;
+  width: auto;
+  text-shadow: 0px 2px 2px rgba(150,150,150,1);
+}
+
 .dev{
   z-index: 4;
   position: relative;
@@ -390,7 +397,7 @@ section:last-of-type{
   z-index: 6;
   position: relative;
   width:100%;
-  height:auto;
+  height:50vh;
   color: #2e2e2e;
   margin: 0 auto;
   padding: 1em 2em;

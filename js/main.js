@@ -1,5 +1,3 @@
-var ht = $('#htitle');
-var h = $('#header');
 
 $(window).load(function (){
   $('#nav').addClass('hide');
