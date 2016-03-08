@@ -32,10 +32,12 @@ footer, header, hgroup, menu, nav, section {
   box-sizing: border-box;
 }
 body {
+  background-color:#f7f7f7;
+  font-family: 'Noto Sans', sans-serif;
   width: 100%;
   line-height: 1.5;
   position: relative;
-  z-index: 9;
+  z-index: 1;
 }
 ol, ul {
   list-style: none;
@@ -57,13 +59,6 @@ text-decoration:none;
 }
 /*Reset, body styles
 --------------------------------------- */
-html {
-  width: 100%;
-  font-family: 'Noto Sans', sans-serif;
-  padding: 0;
-  margin: 0 auto;
-  position: relative;
-}
 
 h1,h2,h3,h4{
   font-family: 'Cabin', sans-serif;
@@ -72,15 +67,6 @@ h1,h2,h3,h4{
 h5,h6{
   font-family: 'Racing Sans One', sans-serif;
 }
-
-.content-wrap{
-  position: relative;
-  height:auto;
-  z-index: 999999;
-  width:100%;
-  background-color:#f7f7f7;
-}
-
 
 /* header styles
 * --------------------------------------- */
@@ -167,8 +153,14 @@ header{
 }
 
 video{
-  position:relative;
+  position: fixed;
   z-index:5;
+  width:auto;
+}
+
+.vidiv{
+  position:relative;
+  z-index:3;
   height:auto;
   width:auto;
 }
