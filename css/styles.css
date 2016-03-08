@@ -324,6 +324,14 @@ video {
   justify-content: center;
 }
 
+@media only screen and (max-width:480px){
+
+.srvcs{
+  background-position: top;
+  background-size: cover;
+}
+}
+
 .dev-intro{
   width: auto;
   height: auto;
@@ -421,6 +429,14 @@ section:last-of-type{
   background-position: bottom; 
   background-image: url("../img/table.jpg");
   flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 480px){
+.intro-inb{
+  background-position: top;
+  background-size: cover;
+}
+
 }
 
 .content{
