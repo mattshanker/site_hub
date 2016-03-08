@@ -147,7 +147,7 @@ p{
 
 header{
   width: 100%;
-  height:auto;
+  height: 100%;
   z-index: 2;
   position: fixed;
 }
@@ -169,14 +169,14 @@ video{
 
 .header{
   position: fixed;
-  z-index: 10;
-  height: auto;
+  z-index: 5;
+  height: 100%;
   width: 100%;
-  background:url("../img/paint.gif") no-repeat center; 
+  background-image: url("../img/paint.gif"); 
   top: 0;
   background-size:100% auto;
   background-attachment:fixed;
-  background-color:#000000;
+  background-repeat: no-repeat;
 }
 
 .header-title{
@@ -504,12 +504,12 @@ section:after{
 /*work section styles*/
 
 .work-section{
-  z-index: 9;
+  z-index: 4;
   position: relative;
   width:100%;
   height:100%;
   background-color: #E6E8E6;
-  margin: 0 auto;
+  margin-top: 3em;
   padding: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
