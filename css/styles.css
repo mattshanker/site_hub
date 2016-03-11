@@ -56,13 +56,33 @@ table {
   border-spacing: 0;
 }
 a{
-text-decoration:none;
+  text-decoration:none;
+  color: inherit;
 }
 /*Reset, body styles
 --------------------------------------- */
 
-h1,h2,h3,h4{
-  font-family: 'Cabin', sans-serif;
+@font-face{
+  font-family: "Overpass";
+  src: url("../fonts/Overpass_Regular.ttf");
+}
+
+@font-face{
+  font-family: "Overpass Light";
+  src: url("../fonts/Overpass_Light.ttf");
+}
+
+@font-face{
+  font-family: "Overpass Extra Light";
+  src: url("../fonts/Overpass_ExtraLight.ttf");
+}
+
+h1,h3{
+  font-family: 'Overpass Light', sans-serif;
+}
+
+h2,h4{
+  font-family: 'Overpass', sans-serif;
 }
 
 h5,h6{
@@ -173,6 +193,7 @@ header{
   color: rgb(247, 247, 247);
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
+  padding: 0 5%;
   padding-top: 10%;
   text-align: center;
   height: auto;
@@ -183,7 +204,7 @@ header{
   color: rgb(247, 247, 247);
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
-  padding-top: 10%;
+  padding-top: 5%;
   text-align: center;
   height: auto;
   color: #5c4383;
@@ -324,8 +345,11 @@ header{
   height: auto;
   position: relative;
   z-index: 5;
-  background-color:#f7f7f7;
   padding:4em 0;
+  background-image: url("../img/cyc.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 /*end about section*/
 
@@ -348,7 +372,7 @@ header{
   -ms-flex-direction: row;
   flex-direction: row;
   color: #3F403F;
-  background-size: contain;
+  background-size: cover;
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-position: bottom; 
@@ -455,12 +479,22 @@ section:last-of-type{
   align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  background-size: contain;
+  background-size: cover;
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-position: bottom; 
   background-image: url("../img/table.jpg");
   flex-wrap: wrap;
+}
+
+.content-about{
+  color:#343434;
+  background-color:#f7f7f7;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 2em;
+  max-width:600px;
+  background-color: hsla(0,0%,97%,0.7);
 }
 
 @media only screen and (max-width: 480px){
@@ -604,7 +638,7 @@ section:after{
 
 .footer{
   width: 100%;
-  height: 25vh;
+  height: 6em;
   color: #E6E8E6;
   position: fixed;
   bottom: 0;
@@ -613,10 +647,24 @@ section:after{
   display:flex;
   -webkit-align-items:flex-end;
   -ms-flex-align:end;
+  border: 2px solid #E6E8E6;
   flex-direction: row;
 }
 .footer ul li{
   margin: 2em 0;
+}
+
+.footemail{
+  padding: .5em;
+  color: #f7f7f7;
+  text-align: center;
+  flex-grow:5;
+}
+
+.foottag{
+  text-align: center;
+  flex-grow: 1;
+  font-size: 75%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -641,9 +689,11 @@ section:after{
   align-items: flex-end;
 }
 
-.footer a{
+.footemail{
   padding: .5em;
   border: 2px solid #E6E8E6;
+  color: #f7f7f7;
+  text-decoration: dotted;
 }
 
 footer p{
