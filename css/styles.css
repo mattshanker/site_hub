@@ -178,6 +178,10 @@ header{
   position: fixed;
 }
 
+header p{
+  font-size: 80%;
+}
+
 .bigbg{
   position: relative;
   z-index:5;
@@ -190,8 +194,15 @@ header{
   margin-bottom: 6em;
 }
 
+@media only screen and (min-width: 801px){
 .headgif{
   display:none;
+}
+
+.motitle, .mosubti{
+  display: none;
+}
+
 }
 
 .title{
@@ -223,19 +234,26 @@ header{
   height: 100%;
   width: 100%;
   background-image: url("../img/paint.gif"); 
-  top: 0;
-  background-size:100% auto;
-  background-attachment:fixed;
-  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  margin-bottom: 6em;
 }
 
-.title{
+.motitle{
   color: rgb(247, 247, 247);
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
   margin: 0 auto;
+  padding-top: 30%;
   text-align: center;
   height: auto;
+}
+
+.mosubti{
+  padding-top: 5%;
+  text-align: center;
+  
 }
 
 .bigbg{
@@ -258,7 +276,7 @@ header{
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  
+  margin-top: 10%  
 }
 
 .homelink{
@@ -692,30 +710,28 @@ section:after{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction:column;
-  -ms-flex-direction:column;
-  flex-direction:column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction:row;
+  flex-direction:row;
   width: 100%;
-  align-items: flex-end;
+  justify-content: space-around;
 }
 
 .footemail{
   padding: .5em;
-  border: 2px solid #E6E8E6;
   color: #f7f7f7;
-  text-decoration: dotted;
+  align-self: flex-start;
+  top:0;
 }
 
-footer p{
-  flex-grow:5;
-  position: fixed;
-  right: 0;
-  margin-bottom: 0;
+.foottag{
   align-self: flex-end;
   bottom: 0;
   vertical-align: bottom;
+  z-index: 3;
   }
 }
+
 .hide{
 display: none;
 }
