@@ -234,10 +234,18 @@ header p{
   height: 100%;
   width: 100%;
   background-image: url("../img/paint.gif"); 
-  background-size:100% 100%;
+  background-size: 100% auto;
   background-attachment: scroll;
   background-repeat: repeat;
-  margin-bottom: 6em;
+  margin-bottom: 8em;
+}
+
+.gifcontainer{
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
 }
 
 .motitle{
@@ -248,12 +256,16 @@ header p{
   padding-top: 30%;
   text-align: center;
   height: auto;
+  position: relative;
+  z-index: 7;
 }
 
 .mosubti{
   padding-top: 5%;
   text-align: center;
-  
+  position: relative;
+  z-index: 7;
+  margin-bottom: 40vh;
 }
 
 .bigbg{
@@ -265,6 +277,7 @@ header p{
 .nav{
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 9;
   height: 100%;
   background-image:url(../img/groovepaper.png);
@@ -316,6 +329,7 @@ header p{
 
 .tog{
   position: fixed;
+  top: 0;
   width: 100%;
   height: 2.5em;
   background-color: #f7f7f7;
@@ -678,6 +692,7 @@ section:after{
   border: 2px solid #E6E8E6;
   flex-direction: row;
 }
+
 .footer ul li{
   margin: 2em 0;
 }
@@ -713,15 +728,14 @@ section:after{
   -webkit-flex-direction: row;
   -ms-flex-direction:row;
   flex-direction:row;
-  width: 100%;
   justify-content: space-around;
 }
 
 .footemail{
   padding: .5em;
   color: #f7f7f7;
-  align-self: flex-start;
   top:0;
+  text-align: center;
 }
 
 .foottag{
