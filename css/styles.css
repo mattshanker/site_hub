@@ -182,17 +182,6 @@ header p{
   font-size: 80%;
 }
 
-.bigbg{
-  position: relative;
-  z-index:5;
-  width:100%;
-  height:100vh;
-  background-image: url("../img/truck.jpg");
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 6em;
-}
 
 @media only screen and (min-width: 801px){
 .headgif{
@@ -203,27 +192,57 @@ header p{
   display: none;
 }
 
+.bigbg{
+  position: relative;
+  z-index:5;
+  width:100%;
+  height:100vh;
+  background-image: url("../img/truck.jpg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+}
+
 }
 
 .title{
-  color: rgb(247, 247, 247);
+  color: #343434;
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
   padding: 0 5%;
   padding-top: 10%;
   text-align: center;
   height: auto;
+}
+
+.stand{
   color:#1e8cbe;
 }
 
 .subti{
-  color: rgb(247, 247, 247);
+  color: #343434;
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
-  padding-top: 5%;
-  text-align: center;
   height: auto;
+  text-align: center;
+  width: auto;
+}
+
+.canvas{
   color: #5c4383;
+}
+
+.infolink{
+  background-color: orange;
+  height: auto;
+  padding: .5em;
+  border: 2px solid orange;
+  color: #343434;
+  text-align: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width:800px){
