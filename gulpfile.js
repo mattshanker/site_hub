@@ -3,10 +3,15 @@ var bsync          = require('browser-sync').create();
 var autoprefixer   = require('gulp-autoprefixer');
 //var sass           = require('gulp-sass');
 //var concat       = require('gulp-');concat js
-// build task
+//
 //todo
-//open more browsers on serve
+//
 //add js concat to build task
+//postcss
+//
+//
+//
+//
 gulp.task('build', function () {
     return gulp.src('css/styles.css')
         .pipe(autoprefixer({
@@ -22,6 +27,7 @@ gulp.task('build', function () {
         }))
         .pipe(gulp.dest('./img/'));
 });
+
 // Static server
 gulp.task('serve', function() {
     bsync.init({
