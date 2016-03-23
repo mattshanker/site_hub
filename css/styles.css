@@ -295,20 +295,18 @@ header p{
 
 .nav{
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   z-index: 9;
   height: 100%;
-  background-image:url(../img/groovepaper.png);
 }
 
 .links{
-  height: 60vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  margin-top: 10vh; 
   font-family: "Overpass Bold";
 }
 
