@@ -144,7 +144,6 @@ h4{
   font-size: 1.5em;
 }
 p{
-  line-height: 1.8;
   font-size:0.8em;
 }
 
@@ -208,7 +207,13 @@ header p{
 }
 
 .links-sm{
-  display: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.links-sm a {
+  padding: 1em 1.5em;
+  margin-left: 1em;
 }
 
 }
@@ -305,7 +310,6 @@ header p{
 
 .links-sm a{
   padding: 1em 1.5em;
-  margin-top: 2em;
   align-self: center;
   text-transform:uppercase;
   margin-left: 5px;
@@ -330,9 +334,7 @@ header p{
 }
 
 .emaillink{
-  background-color:#FFE66D;
-  color:#3F403F; 
-  padding: 1em 1.5em;
+  color:#FFE66D; 
   font-family: "Overpass Light";
 }
 
@@ -375,8 +377,7 @@ header p{
 }
 
 .emaillink{
-  background-color:#FFE66D;
-  color:#3F403F; 
+  color:#FFE66D; 
   font-family: "Overpass Light";
 }
 
@@ -411,15 +412,15 @@ header p{
   border: 1px solid black;
   display:block;
 }
+}
 
-.fnav{
+@media only screen and (max-width:800px){
+.fnav-sm{
   height: auto;
   display: flex;
   flex-direction:row; 
   align-items: center;
-  justify-content:space-around;
-  margin-top: 3em;
-  width: 300px;
+  justify-content:space-between;
 }
 
 .fnav a {
@@ -434,7 +435,23 @@ header p{
   box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
 }
 
-.fnav a:hover{
+}
+
+.fnav-sm{
+  height: auto;
+  display: flex;
+  flex-direction:row; 
+  align-items: center;
+  justify-content:space-between;
+}
+
+.fnav-sm a {
+  width:auto;
+  height:auto;
+  margin: 0 .5em;
+}
+
+.fnav-sm a:hover{
   transition: all 0.3s ease-in-out;
   background-color: #fff;
   color: red;
@@ -455,7 +472,6 @@ header p{
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
-
 }
 
 }
@@ -577,9 +593,7 @@ header p{
   margin-left: auto;
 }
 
-section:last-of-type{
-  margin-bottom: 8em;
-}
+
 }
 
 .intro-inb{
@@ -644,6 +658,10 @@ section{
   position:relative;
   z-index:7;
   width:100%;
+}
+
+section:last-of-type{
+  margin-bottom: 8em;
 }
 
 @media only screen and (max-width: 480px){
@@ -759,7 +777,7 @@ section:after{
 
 .footer{
   width: 100%;
-  height: 6em;
+  height: 8em;
   color: #E6E8E6;
   position: fixed;
   bottom: 0;
