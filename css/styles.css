@@ -211,6 +211,7 @@ header p{
 .links-sm{
   display: flex;
   flex-direction: row;
+  width: 50%;
 }
 
 .links-sm a {
@@ -257,6 +258,8 @@ header p{
   justify-content: center;
 }
 
+
+
 @media only screen and (max-width:800px){
 
 .headgif{
@@ -277,7 +280,7 @@ header p{
   height: auto;
   padding: .5em;
   color: #343434;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .gifcontainer{
@@ -438,22 +441,21 @@ header p{
 @media only screen and (max-width:800px){
 .fnav-sm{
   height: auto;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction:row; 
   align-items: center;
-  justify-content:space-between;
+  justify-content:space-around;
 }
 
 .fnav-sm a {
   width:auto;
+  flex-grow: 2;
   height:auto;
-  flex-shrink: 1;
-  display: block;
 }
 
 .fnav-sm p{
-  flex-grow: 1;
+  flex-grow: 3;
 }
 
 }
