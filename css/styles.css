@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   background-color:#f7f7f7;
-  font-family: 'Overpass Light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   height: 100%;
   line-height: 1.5;
@@ -83,7 +83,7 @@ a{
 }
 
 h1,h3{
-  font-family: 'Overpass Extra Light', sans-serif;
+  font-family: 'Overpass Bold', sans-serif;
 }
 
 h2,h4{
@@ -99,13 +99,13 @@ h5,h6{
 
 @media only screen and (min-width:801px){
 h1{
-  font-size: 6em;
+  font-size: 3.5em;
 }
 h2{
-  font-size: 4em;
+  font-size: 3em;
 }
 h3{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 h4{
   font-size: 2.5em;
@@ -179,8 +179,13 @@ p{
   align-items: center;
 }
 
-header p{
-  font-size: 80%;
+header {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  z-index: 7;
+  padding: 0;
+  box-shadow: inset 0px -3px 3px 0px rgba(50,50,50,0.75);
 }
 
 
@@ -219,16 +224,27 @@ header p{
   margin-left: 1em;
 }
 
+.headline{
+  color: #f7f7f7;
+  text-shadow: 1px 2px 2px #a2a2a2;
+  z-index: 10;
+  padding: 2em 2em 1em;
+  text-align: center;
+  height: auto;
+  align-self: center;
+
+}
+
 }
 
 .title{
-  color: #343434;
+  color: #f7f7f7;
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
-  padding: 0 5%;
-  padding-top: 10%;
+  padding: 2em;
   text-align: center;
   height: auto;
+  align-self: center;
 }
 
 .stand{
@@ -236,12 +252,13 @@ header p{
 }
 
 .subti{
-  color: #343434;
+  color: #f7f7f7;
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
   height: auto;
   text-align: center;
   width: auto;
+  padding: 1em 2em 2em;
 }
 
 .canvas{
@@ -251,6 +268,7 @@ header p{
 .infolink{
   background-color: orange;
   height: auto;
+  width: 250px;
   padding: .5em;
   border: 2px solid orange;
   color: #343434;
@@ -265,6 +283,12 @@ header p{
   fill: #343434;
 }
 
+.icon-sm{
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: #343434;
+}
 
 @media only screen and (max-width:800px){
 
@@ -287,6 +311,7 @@ header p{
   padding: .5em;
   color: #343434;
   margin-top: 10%;
+  width: 250px;
 }
 
 .gifcontainer{
@@ -298,7 +323,7 @@ header p{
   color: rgb(247, 247, 247);
   text-shadow: 1px 2px 2px #a2a2a2;
   z-index: 10;
-  margin: 0 auto;
+  margin: 0 1em;
   padding-top: 30%;
   text-align: center;
   height: auto;
@@ -313,6 +338,7 @@ header p{
   text-align: center;
   position: relative;
   z-index: 7;
+  margin: 0 1em;
 }
 
 .bigbg{
@@ -321,18 +347,18 @@ header p{
 
 .links-sm{
   height: auto;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
   font-family: "Overpass Bold";
 }
 
 .links-sm a{
-  padding: 1em 1.5em;
+  padding: .5em 1em;
   align-self: center;
   text-transform:uppercase;
-  margin-left: 5px;
 }
 
 .homelink{
@@ -355,7 +381,6 @@ header p{
 
 .emaillink{
   color:#FFE66D; 
-  font-family: "Overpass Light";
 }
 
 }
@@ -398,7 +423,6 @@ header p{
 
 .emaillink{
   color:#FFE66D; 
-  font-family: "Overpass Light";
 }
 
 .links i{
@@ -449,9 +473,9 @@ header p{
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction:row; 
+  flex-flow: row wrap; 
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .fnav-sm a {
@@ -477,75 +501,53 @@ header p{
   color: red;
 }
 
-}
+
 /*end header styles*/
 
-/*about section*/
+.about{
+  background-image: url("../img/cyc.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
 @media only screen and (min-width:800px){
 .about{
   width: 100%;
-  height: auto;
+  height: 500px;
   position: relative;
-  z-index: 5;
-  padding:4em 0;
-  background-image: url("../img/cyc.jpg");
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 3px 3px 0px rgba(50,50,50,0.75);
-}
-
-}
-
-.about{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-flow: column wrap;
   z-index: 5;
   padding:4em 0;
   background-image: url("../img/cyc.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
-  margin-bottom: 8em;
   box-shadow: 0px 3px 3px 0px rgba(50,50,50,0.75);
 }
+
+}
+
 
 
 /*end about section*/
 
 .srvcs{
-  height: 80vh;
-  width: 100%;
-  position: relative;
-  z-index: 3;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow:space-around;
-  -ms-flex-flow:space-around;
-  flex-flow:space-around;
-  vertical-align: middle;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  color: #3F403F;
+  display: flex;
+  align-items: center;
+  align-content: center;
   background-size: cover;
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-position: bottom; 
   background-image: url("../img/before.jpg");
-  justify-content: center;
 }
 
 @media only screen and (max-width:480px){
 
 .srvcs{
+  display: flex;
+  align-items: center;
+  align-content: center;
   background-position: top;
   background-size: cover;
 }
@@ -619,33 +621,17 @@ header p{
 }
 
 .intro-inb{
+  align-items: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
   z-index: 6;
   position: relative;
-  width:100%;
-  height:50vh;
-  color: #2e2e2e;
-  margin: 0 auto;
-  padding: 1em 2em;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -ms-flex-line-pack: center;
-  -webkit-align-content: center;
-  align-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   background-size: cover;
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-position: bottom; 
   background-image: url("../img/table.jpg");
-  flex-wrap: wrap;
 }
 
 .content-about{
@@ -686,41 +672,14 @@ header p{
 section{
   background-color:#f7f7f7;
   position:relative;
-  z-index:7;
+  z-index:3;
   width:100%;
+  height: auto;
+  box-shadow: 0px 3px 3px 0px rgba(50,50,50,0.75);
 }
 
-
-@media only screen and (max-width: 480px){
-
-section:before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -32px;
-  width: 100%;
-  right: 0;
-  height: 12em;
-  background: transparent;
-  -webkit-transform: skewY(7.5deg);
-  transform: skewY(7.5deg) translateY(-10px);
-  z-index: -1;
-}
-
-section:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -32px;
-  width: 100%;
-  right: 0;
-  height: 12em;
-  background: transparent;
-  -webkit-transform: skewY(-7.5deg);
-  transform: skewY(-7.5deg) translateY(-10px);
-  z-index: -1;
-}
-
+section:last-of-type{
+  margin-bottom: 8em;
 }
 
 .inbound{
