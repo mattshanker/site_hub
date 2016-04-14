@@ -379,10 +379,11 @@ header {
 
 }
 
-.emaillink{
-  color:#FFE66D; 
 }
 
+.emaillink{
+  color:#FFE66D; 
+  margin-left: 5px;
 }
 
 @media only screen and (min-width: 801px){
@@ -419,10 +420,6 @@ header {
   color:#3F403F; 
   background-color:#79BEEE;
 
-}
-
-.emaillink{
-  color:#FFE66D; 
 }
 
 .links i{
