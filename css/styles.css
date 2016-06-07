@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
   box-sizing: border-box;
 }
 body {
-  background-color:#f7f7f7;
+  background-color:#fefefe;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   height: 100%;
@@ -186,6 +186,7 @@ header {
   z-index: 7;
   padding: 0;
   box-shadow: inset 0px -3px 3px 0px rgba(50,50,50,0.75);
+  background-color:#fefefe;
 }
 
 
@@ -194,23 +195,16 @@ header {
   display:none;
 }
 
-.motitle, .mosubti{
-  display: none;
-}
-
-.bigbg{
+.head--title{
   position: relative;
   z-index:5;
   width:100%;
-  height:100vh;
-  background-image: url("../img/truck.jpg");
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height:100%;
   margin-bottom: 6em;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 3px 3px 0px rgba(50,50,50,0.75);
+  background-color: #537084;
 }
 
 .links-sm{
@@ -266,14 +260,6 @@ header {
 }
 
 .infolink{
-  background-color: orange;
-  height: auto;
-  width: 250px;
-  padding: .5em;
-  border: 2px solid orange;
-  color: #343434;
-  text-align: center;
-  justify-content: center;
 }
 
 .icon {
@@ -519,26 +505,13 @@ header {
 
 /*end about section*/
 
-.srvcs{
-  align-items: center;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  background-size: cover;
-  background-attachment:fixed;
-  background-repeat: no-repeat;
-  background-position: bottom; 
-  background-image: url("../img/before.jpg");
-}
 
 @media only screen and (max-width:480px){
 
-.srvcs{
+section{
   display: flex;
   align-items: center;
   align-content: center;
-  background-position: top;
-  background-size: cover;
 }
 }
 
@@ -566,33 +539,6 @@ header {
   display: none;
 }
 
-.dev:before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -32px;
-  width: 100%;
-  right: 0;
-  height: 12em;
-  background: inherit;
-  -webkit-transform: skewY(7.5deg);
-  transform: skewY(7.5deg) translateY(-10px);
-  z-index: -1;
-}
-
-.dev:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -32px;
-  width: 100%;
-  right: 0;
-  height: 12em;
-  background: inherit;
-  -webkit-transform: skewY(-7.5deg);
-  transform: skewY(-7.5deg) translateY(-10px);
-  z-index: -1;
-}
 
 @media only screen and (max-width:480px){
 
@@ -659,11 +605,10 @@ header {
 }
 
 section{
-  background-color:#f7f7f7;
   position:relative;
   z-index:3;
   width:100%;
-  height: auto;
+  height: 100%;
   box-shadow: 0px 3px 3px 0px rgba(50,50,50,0.75);
 }
 
@@ -684,63 +629,13 @@ section:last-of-type{
 /*work section styles*/
 
 .work-section{
-  z-index: 4;
-  position: relative;
-  width:100%;
-  height:100%;
-  background-color: #E6E8E6;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: center;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-item-align: center;
-  -webkit-align-self: center;
-  align-self: center;
-  margin-bottom: 8em;
 }
 
 .work-content{
-  max-width: 300px;
-  height: 250px;
-  position: relative;
-  z-index: 5;
-  color: #eee;
-  margin: 20px;
-  padding: 0;
-  background-color: #777;
-  transition: all .3s;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -ms-flex-item-align: end;
-  -webkit-align-self: center;
-  align-self: center;
-  cursor: pointer;
 
 }
 
 .work-content p{
-  -ms-flex-item-align: end;
-  -webkit-align-self: flex-end;
-  align-self: flex-end;
-  color: #777;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .work-content:hover{
