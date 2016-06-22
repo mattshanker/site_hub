@@ -36,6 +36,7 @@ body {
   line-height: 1.5;
   position: relative;
   z-index: 1;
+  overflow: auto;
 }
 
 ol, ul {
@@ -226,28 +227,46 @@ header {
 
 @media only screen and (max-width:800px){
 
-nav{
+.sidebar{
   width: 40px;
   position: fixed;
+  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 9;
-  height: auto;
+  height: 100%;
+  float: left;
+  overflow-y: auto;
   background-color: lightblue;
   box-shadow: 2px 0px 10px 0px rgba(50,50,50,0.75);
 }
 
 ul {
-  height: 100%;
-  width: 100%;
-  display: block;
-  margin-top: 8em;
+  width: 40px;
+  height: 100vh;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
 }
 
 li {
   text-transform: uppercase;
   height: 6em;
-  margin-top: 1em;
-  margin-left:4px;
+  line-height: 60px;
+  margin-left:5px;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  float: left;
+}
+
+
 }
 
 .wrap{
@@ -257,19 +276,11 @@ li {
   z-index:4;
 }
 
-}
-
 @media only screen and (min-width: 801px){
 nav {
   display: none;
 }
 
-nav a{
-  padding: 1em 2em;
-  margin-top: 2em;
-  align-self: center;
-  text-transform:uppercase;
-}
 
 }
 
@@ -279,25 +290,6 @@ nav a{
 
 /*end about section*/
 
-
-@media only screen and (max-width:480px){
-
-section{
-  display: flex;
-}
-
-.content{
-  z-index: 8;
-  position: relative;
-  flex-direction: column;
-  height: auto;
-  width: auto;
-  background-color: inherit;
-  margin-right: auto;
-  margin-left: 4em;
-}
-
-}
 
 .content{
   color:#343434;
@@ -312,6 +304,27 @@ section{
   height: 100%;
   padding: 2em;
 }
+
+@media only screen and (max-width:480px){
+
+section{
+  display: flex;
+  float: right;
+  flex-direction: column;
+}
+
+.content{
+  z-index: 8;
+  position: relative;
+  height: auto;
+  width: auto;
+  background-color: inherit;
+  margin-right: auto;
+  margin-left: 4em;
+}
+
+}
+
 
 /*work section styles*/
 
