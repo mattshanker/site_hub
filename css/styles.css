@@ -314,20 +314,27 @@ section{
   display: flex;
   float: right;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .content{
   z-index: 8;
   position: relative;
-  height: auto;
-  width: auto;
-  background-color: inherit;
+  height: 100%;
+  width: 100%;
   margin-right: auto;
   margin-left: 4em;
 }
 
+.contact{
+  background-color: dimgray;
+}
 }
 
+.email{
+  background-color: lightblue;
+}
 
 /*work section styles*/
 
@@ -340,7 +347,6 @@ section{
 .smlinks{
   width: auto;
   height: auto;
-  margin-left:30%;
 }
 
 .footer{
