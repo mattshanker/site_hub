@@ -236,26 +236,26 @@ header {
   z-index: 9;
   height: 100%;
   float: left;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: lightblue;
-  box-shadow: 2px 0px 10px 0px rgba(50,50,50,0.75);
+  box-shadow: 2px 0px 5px 0px rgba(50,50,50,0.75);
 }
 
 ul {
   width: 40px;
-  height: 100vh;
-  top: 10%;
+  height: 100%;
+  top: 25%;
   left: 0;
   bottom: 0;
   position: absolute;
   z-index: 5;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 li {
   text-transform: uppercase;
-  height: 6em;
   line-height: 60px;
   margin-left:5px;
   padding: 0;
@@ -263,6 +263,7 @@ li {
 
 li a {
   display: block;
+  height: 6em;
   float: left;
 }
 
@@ -274,6 +275,8 @@ li a {
   width:100%;
   position:relative;
   z-index:4;
+  float: right;
+  left: 40px;
 }
 
 @media only screen and (min-width: 801px){
