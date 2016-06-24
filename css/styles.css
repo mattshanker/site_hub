@@ -272,7 +272,7 @@ li a {
 
 .wrap{
   height:100%;
-  width:100%;
+  width: calc(100% - 40px);
   position:relative;
   z-index:4;
   float: right;
