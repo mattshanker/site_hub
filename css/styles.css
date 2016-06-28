@@ -205,8 +205,15 @@ header {
   height: 1.5em;
   width: 1.5em;
   fill: #ffe66d;
+  margin-top: 9px;
 }
 
+.social-icon{
+  border-radius: 100%;
+  height: 3em;
+  width: 3em;
+  background-color: #bbbbbb;
+}
 
 @media only screen and (max-width:800px){
 
@@ -288,13 +295,14 @@ section{
   height: 100%;
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:800px){
 
 section{
   height: 100%;
   width: 100%;
-  max-width: 250px;
   overflow-x: hidden;
+  padding-left: 50px;
+  padding-right: 10px;
 }
 
 .content{
@@ -319,12 +327,21 @@ section{
 .project{
   height: auto;
   width: auto;
-
+  padding-top: 10px 0;
 }
 
 .contact{
-  background-color: dimgray;
+  margin-top: 8em;
+  display: flex;
+  text-align: center;
 }
+
+.icons{
+  display: flex;
+  text-align: center;
+  margin-top: 4em;
+}
+
 }
 
 .email{
