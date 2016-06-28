@@ -304,6 +304,22 @@ section{
   margin-left: auto;
 }
 
+.projects{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 3;
+  position: relative;
+
+}
+
+.project{
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+
+}
+
 .contact{
   background-color: dimgray;
 }
