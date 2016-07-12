@@ -262,6 +262,7 @@ li a {
 }
 
 @media only screen and (max-width: 800px){
+
 .wrap{
   height:100%;
   width: auto;
@@ -270,6 +271,13 @@ li a {
   margin-left: 55px;
   margin-right: 10px;
   }
+
+}
+
+label{
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  right: -10px;
 }
 
 @media only screen and (min-width: 801px){
@@ -286,6 +294,14 @@ nav {
   flex-direction: row;
   display: flex;
 }
+
+nav a:hover label{
+  position: relative;
+  opacity: 0.7;
+  right: 0;
+  transition: all 0.4s ease-in-out;
+}
+
 }
 
 
