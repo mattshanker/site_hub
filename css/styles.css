@@ -270,7 +270,7 @@ label{
 }
 
 .wrap{
-  padding: 30px 30px 40px;
+  padding: 0px 20px;
 }
 
 .work--head{
@@ -283,9 +283,10 @@ label{
   height:100%;
   width: auto;
   position:relative;
-  z-index:4;
+  z-index:3;
   margin-left: 35px;
   margin-right: 5px;
+  background-color: inherit;
   }
 
 }
@@ -371,7 +372,7 @@ nav a:hover .icon{
 
 section{
   position:relative;
-  z-index:3;
+  z-index:5;
   width:100%;
   height: 100%;
   max-width: 650px;
@@ -392,6 +393,7 @@ section{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 6em;
 }
 
 .projects{
@@ -403,9 +405,10 @@ section{
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  z-index: 3;
+  z-index: 5;
   position: relative;
   background-color: #f7f7f7;
+  margin-bottom: 2em;
 }
 
 .project{
@@ -417,12 +420,8 @@ section{
 }
 
 .contact{
-  margin-top: 8em;
   font-size: 70%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
+  margin-top: 4em;
 }
 
 .contact a{
@@ -440,9 +439,16 @@ section{
 
 }
 
+.contact{
+  justify-content: space-around;
+  text-align: center;
+}
+
 .contact a{
   color: #003366;
+  margin-right: 2em;
 }
+
 .projects{
   max-width: 650px;
 }
@@ -508,14 +514,13 @@ footer{
 
 footer{
   width: 100%;
-  max-width: 225px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   color: #d7d7d7;
   position: fixed;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
@@ -524,7 +529,9 @@ footer{
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  justify-content: space-around;
 }
+
 .footemail{
   padding: .5em;
   color: #f7f7f7;
