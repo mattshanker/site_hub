@@ -271,11 +271,13 @@ label{
 
 .wrap{
   padding: 0px 20px;
+  margin-top: 45px;
 }
 
-.work--head{
+.head{
  padding: 0 0 30px; 
 }
+
 
 @media only screen and (max-width: 800px){
 
