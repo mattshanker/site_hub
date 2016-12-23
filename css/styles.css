@@ -59,6 +59,7 @@ table {
 a{
   text-decoration:none;
   color: #ffd700;
+  font-size: 100%;
 
 }
 
@@ -212,6 +213,18 @@ header {
   width: 2em;
   fill: #ffe66d;
 }
+
+@media only screen and (max-width: 500px){
+
+.icon-sm{
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.2em;
+  width: 1.2em;
+  fill: #ffe66d;
+}
+}
+
 
 .social-icon{
   border: 1px solid #999;
