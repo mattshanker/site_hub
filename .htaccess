@@ -2,9 +2,13 @@ DirectoryIndex index.html index.php parking-page.html
 
 RewriteEngine On
 RewriteRule \.git - [F,L]
+
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule (.*)index\.html$ /$1 [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}\.html -f
+
 RewriteRule ^(.*)$ $1.html
-redirectMatch 301 ^(.*)\.html $1
+redirectMatch 301 ^(.*)\.html$ $1
