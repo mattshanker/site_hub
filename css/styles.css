@@ -461,11 +461,13 @@ section{
 
 .contact a{
   color: #003366;
-  margin-right: 2em;
+  margin-right: 1.5em;
 }
 
 .projects{
   max-width: 650px;
+  background-color: #f7f7f7;
+  margin-bottom: 2em;
 }
 
 .icons{
@@ -544,7 +546,7 @@ footer{
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .footemail{
