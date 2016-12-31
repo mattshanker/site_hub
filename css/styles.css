@@ -294,8 +294,14 @@ label{
   left: 0;
   right: 0;
 }
+
 .close{
-  
+  top: 0;
+  position: relative;
+  margin-top: 5px;
+  padding: 0;
+  left: 0;
+  right: 0;
 }
 }
 
