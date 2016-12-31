@@ -241,19 +241,24 @@ header {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: 9;
   height: 100%;
-  float: left;
+  float: right;
   overflow-y: hidden;
   background-color: #d7d7d7;
   box-shadow: 2px 0px 5px 0px rgba(50,50,50,0.75);
 }
 
+.open{
+  right: -40px;
+  transition: all 0.3s ease-in-out;
+}
+
 ul {
   width: 40px;
   height: 100%;
-  top: 25%;
+  top: 0;
   left: 0;
   bottom: 0;
   position: absolute;
@@ -280,6 +285,18 @@ li a {
 label{
   display: none;
   }
+
+.toggle{
+  top: 0;
+  position: relative;
+  margin-top: 5px;
+  padding: 0;
+  left: 0;
+  right: 0;
+}
+.close{
+  
+}
 }
 
 .wrap{
@@ -299,8 +316,8 @@ label{
   width: auto;
   position:relative;
   z-index:3;
-  margin-left: 35px;
-  margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 35px;
   background-color: inherit;
   }
 
@@ -353,8 +370,10 @@ nav a:hover .icon{
   
 }
 
+.toggle{
+  display: none;
 }
-
+}
 
 /*end header styles*/
 
@@ -383,6 +402,7 @@ nav a:hover .icon{
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 20vh;
+  padding-bottom: 5vh;
 }
 
 section{

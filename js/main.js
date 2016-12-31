@@ -1,8 +1,8 @@
 
-window.addEventListener("load",function() {
-  setTimeout(function(){
-	  window.scrollTo(0, 1);
-  }, 0);
-});
+ var tog = document.getElementById("toggle");
 
-console.log('Thank you for visiting!');
+ tog.onclick = function() {
+ getElementById("sidebar");
+ sidebar.classList.toggle("open");
+ tog.classList.toggle("hide");
+ };
