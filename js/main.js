@@ -1,8 +1,21 @@
 
- var tog = document.getElementById("toggle");
+ var tog = document.getElementById("toggle"),
+  bar = document.getElementById("sidebar"),
+  close = document.getElementById("close");
 
- tog.onclick = function() {
- getElementById("sidebar");
- sidebar.classList.toggle("open");
- tog.classList.toggle("hide");
- };
+
+function menu () {
+ bar.classList.toggle("open");
+ tog.classList.toggle("open-tog");
+ console.log("toggle clicked");
+ }
+
+
+tog.onclick = menu;
+
+
+function testing () {
+  console.log("loaded");
+}
+
+window.onload = testing();
